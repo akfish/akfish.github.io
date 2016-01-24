@@ -6037,6 +6037,12 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
     vertical-align: middle;
   }
 }
+.navbar .navbar-header .navbar-brand ruby + span {
+  display: none;
+}
+.navbar .navbar-header .navbar-brand ruby rb {
+  line-height: 1;
+}
 .navbar .navbar-header .navbar-brand .logo {
   font-size: 61.8px;
   height: 100%;
