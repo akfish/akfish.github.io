@@ -1,0 +1,4271 @@
+@font-face {
+    font-family: "FZKai-Z03";
+    src: url("./FZKaiTi.eot"); /* IE9 */
+    src: url("./FZKaiTi.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./FZKaiTi.woff") format("woff"), /* chrome, firefox */
+    url("./FZKaiTi.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("./FZKaiTi.svg#FZKai-Z03") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+[class^="icon-"],
+[class*=" icon-"]:after {
+    font-family: "FZKai-Z03";
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.icon-uni21:before {
+    content: "\21";
+}
+
+.icon-uni22:before {
+    content: "\22";
+}
+
+.icon-uni23:before {
+    content: "\23";
+}
+
+.icon-uni24:before {
+    content: "\24";
+}
+
+.icon-uni25:before {
+    content: "\25";
+}
+
+.icon-uni26:before {
+    content: "\26";
+}
+
+.icon-uni27:before {
+    content: "\27";
+}
+
+.icon-uni28:before {
+    content: "\28";
+}
+
+.icon-uni29:before {
+    content: "\29";
+}
+
+.icon-uni2a:before {
+    content: "\2a";
+}
+
+.icon-uni2b:before {
+    content: "\2b";
+}
+
+.icon-uni2c:before {
+    content: "\2c";
+}
+
+.icon-uni2d:before {
+    content: "\2d";
+}
+
+.icon-uni2e:before {
+    content: "\2e";
+}
+
+.icon-uni2f:before {
+    content: "\2f";
+}
+
+.icon-uni30:before {
+    content: "\30";
+}
+
+.icon-uni31:before {
+    content: "\31";
+}
+
+.icon-uni32:before {
+    content: "\32";
+}
+
+.icon-uni33:before {
+    content: "\33";
+}
+
+.icon-uni34:before {
+    content: "\34";
+}
+
+.icon-uni35:before {
+    content: "\35";
+}
+
+.icon-uni36:before {
+    content: "\36";
+}
+
+.icon-uni37:before {
+    content: "\37";
+}
+
+.icon-uni38:before {
+    content: "\38";
+}
+
+.icon-uni39:before {
+    content: "\39";
+}
+
+.icon-uni3a:before {
+    content: "\3a";
+}
+
+.icon-uni3b:before {
+    content: "\3b";
+}
+
+.icon-uni3c:before {
+    content: "\3c";
+}
+
+.icon-uni3d:before {
+    content: "\3d";
+}
+
+.icon-uni3e:before {
+    content: "\3e";
+}
+
+.icon-uni3f:before {
+    content: "\3f";
+}
+
+.icon-uni40:before {
+    content: "\40";
+}
+
+.icon-uni41:before {
+    content: "\41";
+}
+
+.icon-uni42:before {
+    content: "\42";
+}
+
+.icon-uni43:before {
+    content: "\43";
+}
+
+.icon-uni44:before {
+    content: "\44";
+}
+
+.icon-uni45:before {
+    content: "\45";
+}
+
+.icon-uni46:before {
+    content: "\46";
+}
+
+.icon-uni47:before {
+    content: "\47";
+}
+
+.icon-uni48:before {
+    content: "\48";
+}
+
+.icon-uni49:before {
+    content: "\49";
+}
+
+.icon-uni4a:before {
+    content: "\4a";
+}
+
+.icon-uni4b:before {
+    content: "\4b";
+}
+
+.icon-uni4c:before {
+    content: "\4c";
+}
+
+.icon-uni4d:before {
+    content: "\4d";
+}
+
+.icon-uni4e:before {
+    content: "\4e";
+}
+
+.icon-uni4f:before {
+    content: "\4f";
+}
+
+.icon-uni50:before {
+    content: "\50";
+}
+
+.icon-uni51:before {
+    content: "\51";
+}
+
+.icon-uni52:before {
+    content: "\52";
+}
+
+.icon-uni53:before {
+    content: "\53";
+}
+
+.icon-uni54:before {
+    content: "\54";
+}
+
+.icon-uni55:before {
+    content: "\55";
+}
+
+.icon-uni56:before {
+    content: "\56";
+}
+
+.icon-uni57:before {
+    content: "\57";
+}
+
+.icon-uni58:before {
+    content: "\58";
+}
+
+.icon-uni59:before {
+    content: "\59";
+}
+
+.icon-uni5b:before {
+    content: "\5b";
+}
+
+.icon-uni5c:before {
+    content: "\5c";
+}
+
+.icon-uni5d:before {
+    content: "\5d";
+}
+
+.icon-uni5e:before {
+    content: "\5e";
+}
+
+.icon-uni5f:before {
+    content: "\5f";
+}
+
+.icon-uni60:before {
+    content: "\60";
+}
+
+.icon-uni61:before {
+    content: "\61";
+}
+
+.icon-uni62:before {
+    content: "\62";
+}
+
+.icon-uni63:before {
+    content: "\63";
+}
+
+.icon-uni64:before {
+    content: "\64";
+}
+
+.icon-uni65:before {
+    content: "\65";
+}
+
+.icon-uni66:before {
+    content: "\66";
+}
+
+.icon-uni67:before {
+    content: "\67";
+}
+
+.icon-uni68:before {
+    content: "\68";
+}
+
+.icon-uni69:before {
+    content: "\69";
+}
+
+.icon-uni6a:before {
+    content: "\6a";
+}
+
+.icon-uni6b:before {
+    content: "\6b";
+}
+
+.icon-uni6c:before {
+    content: "\6c";
+}
+
+.icon-uni6d:before {
+    content: "\6d";
+}
+
+.icon-uni6e:before {
+    content: "\6e";
+}
+
+.icon-uni6f:before {
+    content: "\6f";
+}
+
+.icon-uni70:before {
+    content: "\70";
+}
+
+.icon-uni71:before {
+    content: "\71";
+}
+
+.icon-uni72:before {
+    content: "\72";
+}
+
+.icon-uni73:before {
+    content: "\73";
+}
+
+.icon-uni74:before {
+    content: "\74";
+}
+
+.icon-uni75:before {
+    content: "\75";
+}
+
+.icon-uni76:before {
+    content: "\76";
+}
+
+.icon-uni77:before {
+    content: "\77";
+}
+
+.icon-uni78:before {
+    content: "\78";
+}
+
+.icon-uni79:before {
+    content: "\79";
+}
+
+.icon-uni7a:before {
+    content: "\7a";
+}
+
+.icon-uni7b:before {
+    content: "\7b";
+}
+
+.icon-uni7c:before {
+    content: "\7c";
+}
+
+.icon-uni7d:before {
+    content: "\7d";
+}
+
+.icon-uni7e:before {
+    content: "\7e";
+}
+
+.icon-unib0:before {
+    content: "\b0";
+}
+
+.icon-uni2019:before {
+    content: "\2019";
+}
+
+.icon-uni201c:before {
+    content: "\201c";
+}
+
+.icon-uni201d:before {
+    content: "\201d";
+}
+
+.icon-uni2026:before {
+    content: "\2026";
+}
+
+.icon-uni2500:before {
+    content: "\2500";
+}
+
+.icon-uni2502:before {
+    content: "\2502";
+}
+
+.icon-uni2514:before {
+    content: "\2514";
+}
+
+.icon-uni251c:before {
+    content: "\251c";
+}
+
+.icon-uni3001:before {
+    content: "\3001";
+}
+
+.icon-uni3002:before {
+    content: "\3002";
+}
+
+.icon-uni4e00:before {
+    content: "\4e00";
+}
+
+.icon-uni4e07:before {
+    content: "\4e07";
+}
+
+.icon-uni4e09:before {
+    content: "\4e09";
+}
+
+.icon-uni4e0a:before {
+    content: "\4e0a";
+}
+
+.icon-uni4e0b:before {
+    content: "\4e0b";
+}
+
+.icon-uni4e0d:before {
+    content: "\4e0d";
+}
+
+.icon-uni4e0e:before {
+    content: "\4e0e";
+}
+
+.icon-uni4e13:before {
+    content: "\4e13";
+}
+
+.icon-uni4e14:before {
+    content: "\4e14";
+}
+
+.icon-uni4e16:before {
+    content: "\4e16";
+}
+
+.icon-uni4e1a:before {
+    content: "\4e1a";
+}
+
+.icon-uni4e22:before {
+    content: "\4e22";
+}
+
+.icon-uni4e24:before {
+    content: "\4e24";
+}
+
+.icon-uni4e25:before {
+    content: "\4e25";
+}
+
+.icon-uni4e2a:before {
+    content: "\4e2a";
+}
+
+.icon-uni4e2d:before {
+    content: "\4e2d";
+}
+
+.icon-uni4e32:before {
+    content: "\4e32";
+}
+
+.icon-uni4e3a:before {
+    content: "\4e3a";
+}
+
+.icon-uni4e3b:before {
+    content: "\4e3b";
+}
+
+.icon-uni4e3d:before {
+    content: "\4e3d";
+}
+
+.icon-uni4e3e:before {
+    content: "\4e3e";
+}
+
+.icon-uni4e48:before {
+    content: "\4e48";
+}
+
+.icon-uni4e49:before {
+    content: "\4e49";
+}
+
+.icon-uni4e4b:before {
+    content: "\4e4b";
+}
+
+.icon-uni4e4c:before {
+    content: "\4e4c";
+}
+
+.icon-uni4e4e:before {
+    content: "\4e4e";
+}
+
+.icon-uni4e4f:before {
+    content: "\4e4f";
+}
+
+.icon-uni4e50:before {
+    content: "\4e50";
+}
+
+.icon-uni4e58:before {
+    content: "\4e58";
+}
+
+.icon-uni4e5f:before {
+    content: "\4e5f";
+}
+
+.icon-uni4e60:before {
+    content: "\4e60";
+}
+
+.icon-uni4e66:before {
+    content: "\4e66";
+}
+
+.icon-uni4e70:before {
+    content: "\4e70";
+}
+
+.icon-uni4e86:before {
+    content: "\4e86";
+}
+
+.icon-uni4e8b:before {
+    content: "\4e8b";
+}
+
+.icon-uni4e8c:before {
+    content: "\4e8c";
+}
+
+.icon-uni4e8e:before {
+    content: "\4e8e";
+}
+
+.icon-uni4e91:before {
+    content: "\4e91";
+}
+
+.icon-uni4e92:before {
+    content: "\4e92";
+}
+
+.icon-uni4e9b:before {
+    content: "\4e9b";
+}
+
+.icon-uni4ea1:before {
+    content: "\4ea1";
+}
+
+.icon-uni4ea4:before {
+    content: "\4ea4";
+}
+
+.icon-uni4ea7:before {
+    content: "\4ea7";
+}
+
+.icon-uni4eae:before {
+    content: "\4eae";
+}
+
+.icon-uni4eba:before {
+    content: "\4eba";
+}
+
+.icon-uni4ec0:before {
+    content: "\4ec0";
+}
+
+.icon-uni4ec5:before {
+    content: "\4ec5";
+}
+
+.icon-uni4eca:before {
+    content: "\4eca";
+}
+
+.icon-uni4ecb:before {
+    content: "\4ecb";
+}
+
+.icon-uni4ecd:before {
+    content: "\4ecd";
+}
+
+.icon-uni4ece:before {
+    content: "\4ece";
+}
+
+.icon-uni4ed6:before {
+    content: "\4ed6";
+}
+
+.icon-uni4ee3:before {
+    content: "\4ee3";
+}
+
+.icon-uni4ee4:before {
+    content: "\4ee4";
+}
+
+.icon-uni4ee5:before {
+    content: "\4ee5";
+}
+
+.icon-uni4eec:before {
+    content: "\4eec";
+}
+
+.icon-uni4ef0:before {
+    content: "\4ef0";
+}
+
+.icon-uni4ef6:before {
+    content: "\4ef6";
+}
+
+.icon-uni4efb:before {
+    content: "\4efb";
+}
+
+.icon-uni4efd:before {
+    content: "\4efd";
+}
+
+.icon-uni4f17:before {
+    content: "\4f17";
+}
+
+.icon-uni4f18:before {
+    content: "\4f18";
+}
+
+.icon-uni4f1a:before {
+    content: "\4f1a";
+}
+
+.icon-uni4f20:before {
+    content: "\4f20";
+}
+
+.icon-uni4f30:before {
+    content: "\4f30";
+}
+
+.icon-uni4f3c:before {
+    content: "\4f3c";
+}
+
+.icon-uni4f46:before {
+    content: "\4f46";
+}
+
+.icon-uni4f4d:before {
+    content: "\4f4d";
+}
+
+.icon-uni4f4e:before {
+    content: "\4f4e";
+}
+
+.icon-uni4f4f:before {
+    content: "\4f4f";
+}
+
+.icon-uni4f53:before {
+    content: "\4f53";
+}
+
+.icon-uni4f55:before {
+    content: "\4f55";
+}
+
+.icon-uni4f59:before {
+    content: "\4f59";
+}
+
+.icon-uni4f5c:before {
+    content: "\4f5c";
+}
+
+.icon-uni4f60:before {
+    content: "\4f60";
+}
+
+.icon-uni4f7f:before {
+    content: "\4f7f";
+}
+
+.icon-uni4f8b:before {
+    content: "\4f8b";
+}
+
+.icon-uni4f9b:before {
+    content: "\4f9b";
+}
+
+.icon-uni4f9d:before {
+    content: "\4f9d";
+}
+
+.icon-uni4fa7:before {
+    content: "\4fa7";
+}
+
+.icon-uni4fbf:before {
+    content: "\4fbf";
+}
+
+.icon-uni4fdd:before {
+    content: "\4fdd";
+}
+
+.icon-uni4fe1:before {
+    content: "\4fe1";
+}
+
+.icon-uni4fee:before {
+    content: "\4fee";
+}
+
+.icon-uni500d:before {
+    content: "\500d";
+}
+
+.icon-uni5012:before {
+    content: "\5012";
+}
+
+.icon-uni5019:before {
+    content: "\5019";
+}
+
+.icon-uni503c:before {
+    content: "\503c";
+}
+
+.icon-uni503e:before {
+    content: "\503e";
+}
+
+.icon-uni5047:before {
+    content: "\5047";
+}
+
+.icon-uni505a:before {
+    content: "\505a";
+}
+
+.icon-uni505c:before {
+    content: "\505c";
+}
+
+.icon-uni5076:before {
+    content: "\5076";
+}
+
+.icon-uni5077:before {
+    content: "\5077";
+}
+
+.icon-uni50a8:before {
+    content: "\50a8";
+}
+
+.icon-uni50cf:before {
+    content: "\50cf";
+}
+
+.icon-uni5141:before {
+    content: "\5141";
+}
+
+.icon-uni5143:before {
+    content: "\5143";
+}
+
+.icon-uni5145:before {
+    content: "\5145";
+}
+
+.icon-uni5148:before {
+    content: "\5148";
+}
+
+.icon-uni5149:before {
+    content: "\5149";
+}
+
+.icon-uni514b:before {
+    content: "\514b";
+}
+
+.icon-uni514d:before {
+    content: "\514d";
+}
+
+.icon-uni515a:before {
+    content: "\515a";
+}
+
+.icon-uni5165:before {
+    content: "\5165";
+}
+
+.icon-uni5168:before {
+    content: "\5168";
+}
+
+.icon-uni516c:before {
+    content: "\516c";
+}
+
+.icon-uni5171:before {
+    content: "\5171";
+}
+
+.icon-uni5173:before {
+    content: "\5173";
+}
+
+.icon-uni5174:before {
+    content: "\5174";
+}
+
+.icon-uni5176:before {
+    content: "\5176";
+}
+
+.icon-uni5177:before {
+    content: "\5177";
+}
+
+.icon-uni517c:before {
+    content: "\517c";
+}
+
+.icon-uni5185:before {
+    content: "\5185";
+}
+
+.icon-uni518c:before {
+    content: "\518c";
+}
+
+.icon-uni518d:before {
+    content: "\518d";
+}
+
+.icon-uni5197:before {
+    content: "\5197";
+}
+
+.icon-uni5199:before {
+    content: "\5199";
+}
+
+.icon-uni51ac:before {
+    content: "\51ac";
+}
+
+.icon-uni51b0:before {
+    content: "\51b0";
+}
+
+.icon-uni51b2:before {
+    content: "\51b2";
+}
+
+.icon-uni51b3:before {
+    content: "\51b3";
+}
+
+.icon-uni51b5:before {
+    content: "\51b5";
+}
+
+.icon-uni51c6:before {
+    content: "\51c6";
+}
+
+.icon-uni51cf:before {
+    content: "\51cf";
+}
+
+.icon-uni51e0:before {
+    content: "\51e0";
+}
+
+.icon-uni51fa:before {
+    content: "\51fa";
+}
+
+.icon-uni51fb:before {
+    content: "\51fb";
+}
+
+.icon-uni51fd:before {
+    content: "\51fd";
+}
+
+.icon-uni5206:before {
+    content: "\5206";
+}
+
+.icon-uni5207:before {
+    content: "\5207";
+}
+
+.icon-uni5212:before {
+    content: "\5212";
+}
+
+.icon-uni5217:before {
+    content: "\5217";
+}
+
+.icon-uni5219:before {
+    content: "\5219";
+}
+
+.icon-uni521a:before {
+    content: "\521a";
+}
+
+.icon-uni521b:before {
+    content: "\521b";
+}
+
+.icon-uni521d:before {
+    content: "\521d";
+}
+
+.icon-uni5220:before {
+    content: "\5220";
+}
+
+.icon-uni5224:before {
+    content: "\5224";
+}
+
+.icon-uni5229:before {
+    content: "\5229";
+}
+
+.icon-uni522b:before {
+    content: "\522b";
+}
+
+.icon-uni5230:before {
+    content: "\5230";
+}
+
+.icon-uni5236:before {
+    content: "\5236";
+}
+
+.icon-uni5237:before {
+    content: "\5237";
+}
+
+.icon-uni523b:before {
+    content: "\523b";
+}
+
+.icon-uni524d:before {
+    content: "\524d";
+}
+
+.icon-uni5269:before {
+    content: "\5269";
+}
+
+.icon-uni526f:before {
+    content: "\526f";
+}
+
+.icon-uni529b:before {
+    content: "\529b";
+}
+
+.icon-uni529e:before {
+    content: "\529e";
+}
+
+.icon-uni529f:before {
+    content: "\529f";
+}
+
+.icon-uni52a0:before {
+    content: "\52a0";
+}
+
+.icon-uni52a1:before {
+    content: "\52a1";
+}
+
+.icon-uni52a8:before {
+    content: "\52a8";
+}
+
+.icon-uni52a9:before {
+    content: "\52a9";
+}
+
+.icon-uni52b1:before {
+    content: "\52b1";
+}
+
+.icon-uni52b2:before {
+    content: "\52b2";
+}
+
+.icon-uni5305:before {
+    content: "\5305";
+}
+
+.icon-uni5316:before {
+    content: "\5316";
+}
+
+.icon-uni5317:before {
+    content: "\5317";
+}
+
+.icon-uni533a:before {
+    content: "\533a";
+}
+
+.icon-uni5341:before {
+    content: "\5341";
+}
+
+.icon-uni5343:before {
+    content: "\5343";
+}
+
+.icon-uni5347:before {
+    content: "\5347";
+}
+
+.icon-uni534a:before {
+    content: "\534a";
+}
+
+.icon-uni534f:before {
+    content: "\534f";
+}
+
+.icon-uni5355:before {
+    content: "\5355";
+}
+
+.icon-uni5357:before {
+    content: "\5357";
+}
+
+.icon-uni535a:before {
+    content: "\535a";
+}
+
+.icon-uni5360:before {
+    content: "\5360";
+}
+
+.icon-uni5373:before {
+    content: "\5373";
+}
+
+.icon-uni5374:before {
+    content: "\5374";
+}
+
+.icon-uni538b:before {
+    content: "\538b";
+}
+
+.icon-uni5398:before {
+    content: "\5398";
+}
+
+.icon-uni539f:before {
+    content: "\539f";
+}
+
+.icon-uni53bb:before {
+    content: "\53bb";
+}
+
+.icon-uni53c2:before {
+    content: "\53c2";
+}
+
+.icon-uni53c8:before {
+    content: "\53c8";
+}
+
+.icon-uni53ca:before {
+    content: "\53ca";
+}
+
+.icon-uni53cd:before {
+    content: "\53cd";
+}
+
+.icon-uni53d1:before {
+    content: "\53d1";
+}
+
+.icon-uni53d6:before {
+    content: "\53d6";
+}
+
+.icon-uni53d7:before {
+    content: "\53d7";
+}
+
+.icon-uni53d8:before {
+    content: "\53d8";
+}
+
+.icon-uni53e0:before {
+    content: "\53e0";
+}
+
+.icon-uni53e3:before {
+    content: "\53e3";
+}
+
+.icon-uni53e5:before {
+    content: "\53e5";
+}
+
+.icon-uni53e6:before {
+    content: "\53e6";
+}
+
+.icon-uni53ea:before {
+    content: "\53ea";
+}
+
+.icon-uni53eb:before {
+    content: "\53eb";
+}
+
+.icon-uni53ef:before {
+    content: "\53ef";
+}
+
+.icon-uni53f0:before {
+    content: "\53f0";
+}
+
+.icon-uni53f3:before {
+    content: "\53f3";
+}
+
+.icon-uni53f7:before {
+    content: "\53f7";
+}
+
+.icon-uni5403:before {
+    content: "\5403";
+}
+
+.icon-uni5404:before {
+    content: "\5404";
+}
+
+.icon-uni5408:before {
+    content: "\5408";
+}
+
+.icon-uni5409:before {
+    content: "\5409";
+}
+
+.icon-uni540c:before {
+    content: "\540c";
+}
+
+.icon-uni540d:before {
+    content: "\540d";
+}
+
+.icon-uni540e:before {
+    content: "\540e";
+}
+
+.icon-uni5411:before {
+    content: "\5411";
+}
+
+.icon-uni5426:before {
+    content: "\5426";
+}
+
+.icon-uni5427:before {
+    content: "\5427";
+}
+
+.icon-uni542b:before {
+    content: "\542b";
+}
+
+.icon-uni542f:before {
+    content: "\542f";
+}
+
+.icon-uni5438:before {
+    content: "\5438";
+}
+
+.icon-uni543b:before {
+    content: "\543b";
+}
+
+.icon-uni544a:before {
+    content: "\544a";
+}
+
+.icon-uni5458:before {
+    content: "\5458";
+}
+
+.icon-uni5468:before {
+    content: "\5468";
+}
+
+.icon-uni5473:before {
+    content: "\5473";
+}
+
+.icon-uni547d:before {
+    content: "\547d";
+}
+
+.icon-uni548c:before {
+    content: "\548c";
+}
+
+.icon-uni54cd:before {
+    content: "\54cd";
+}
+
+.icon-uni54e5:before {
+    content: "\54e5";
+}
+
+.icon-uni54ea:before {
+    content: "\54ea";
+}
+
+.icon-uni552f:before {
+    content: "\552f";
+}
+
+.icon-uni5580:before {
+    content: "\5580";
+}
+
+.icon-uni5584:before {
+    content: "\5584";
+}
+
+.icon-uni5632:before {
+    content: "\5632";
+}
+
+.icon-uni5668:before {
+    content: "\5668";
+}
+
+.icon-uni56db:before {
+    content: "\56db";
+}
+
+.icon-uni56de:before {
+    content: "\56de";
+}
+
+.icon-uni56e0:before {
+    content: "\56e0";
+}
+
+.icon-uni56e2:before {
+    content: "\56e2";
+}
+
+.icon-uni56f4:before {
+    content: "\56f4";
+}
+
+.icon-uni56fa:before {
+    content: "\56fa";
+}
+
+.icon-uni56fd:before {
+    content: "\56fd";
+}
+
+.icon-uni56fe:before {
+    content: "\56fe";
+}
+
+.icon-uni5708:before {
+    content: "\5708";
+}
+
+.icon-uni571f:before {
+    content: "\571f";
+}
+
+.icon-uni5728:before {
+    content: "\5728";
+}
+
+.icon-uni5730:before {
+    content: "\5730";
+}
+
+.icon-uni573e:before {
+    content: "\573e";
+}
+
+.icon-uni5740:before {
+    content: "\5740";
+}
+
+.icon-uni5747:before {
+    content: "\5747";
+}
+
+.icon-uni574f:before {
+    content: "\574f";
+}
+
+.icon-uni5750:before {
+    content: "\5750";
+}
+
+.icon-uni5751:before {
+    content: "\5751";
+}
+
+.icon-uni5757:before {
+    content: "\5757";
+}
+
+.icon-uni5782:before {
+    content: "\5782";
+}
+
+.icon-uni5783:before {
+    content: "\5783";
+}
+
+.icon-uni578b:before {
+    content: "\578b";
+}
+
+.icon-uni57df:before {
+    content: "\57df";
+}
+
+.icon-uni57fa:before {
+    content: "\57fa";
+}
+
+.icon-uni5806:before {
+    content: "\5806";
+}
+
+.icon-uni5835:before {
+    content: "\5835";
+}
+
+.icon-uni5883:before {
+    content: "\5883";
+}
+
+.icon-uni589e:before {
+    content: "\589e";
+}
+
+.icon-uni58ee:before {
+    content: "\58ee";
+}
+
+.icon-uni5904:before {
+    content: "\5904";
+}
+
+.icon-uni5907:before {
+    content: "\5907";
+}
+
+.icon-uni590d:before {
+    content: "\590d";
+}
+
+.icon-uni590f:before {
+    content: "\590f";
+}
+
+.icon-uni5916:before {
+    content: "\5916";
+}
+
+.icon-uni591a:before {
+    content: "\591a";
+}
+
+.icon-uni591c:before {
+    content: "\591c";
+}
+
+.icon-uni591f:before {
+    content: "\591f";
+}
+
+.icon-uni5927:before {
+    content: "\5927";
+}
+
+.icon-uni5929:before {
+    content: "\5929";
+}
+
+.icon-uni592a:before {
+    content: "\592a";
+}
+
+.icon-uni592e:before {
+    content: "\592e";
+}
+
+.icon-uni5931:before {
+    content: "\5931";
+}
+
+.icon-uni5934:before {
+    content: "\5934";
+}
+
+.icon-uni5939:before {
+    content: "\5939";
+}
+
+.icon-uni5947:before {
+    content: "\5947";
+}
+
+.icon-uni5956:before {
+    content: "\5956";
+}
+
+.icon-uni5957:before {
+    content: "\5957";
+}
+
+.icon-uni597d:before {
+    content: "\597d";
+}
+
+.icon-uni5982:before {
+    content: "\5982";
+}
+
+.icon-uni5999:before {
+    content: "\5999";
+}
+
+.icon-uni59cb:before {
+    content: "\59cb";
+}
+
+.icon-uni5a01:before {
+    content: "\5a01";
+}
+
+.icon-uni5b50:before {
+    content: "\5b50";
+}
+
+.icon-uni5b57:before {
+    content: "\5b57";
+}
+
+.icon-uni5b58:before {
+    content: "\5b58";
+}
+
+.icon-uni5b63:before {
+    content: "\5b63";
+}
+
+.icon-uni5b66:before {
+    content: "\5b66";
+}
+
+.icon-uni5b83:before {
+    content: "\5b83";
+}
+
+.icon-uni5b89:before {
+    content: "\5b89";
+}
+
+.icon-uni5b8c:before {
+    content: "\5b8c";
+}
+
+.icon-uni5b98:before {
+    content: "\5b98";
+}
+
+.icon-uni5b9a:before {
+    content: "\5b9a";
+}
+
+.icon-uni5b9e:before {
+    content: "\5b9e";
+}
+
+.icon-uni5ba2:before {
+    content: "\5ba2";
+}
+
+.icon-uni5ba4:before {
+    content: "\5ba4";
+}
+
+.icon-uni5bb6:before {
+    content: "\5bb6";
+}
+
+.icon-uni5bb9:before {
+    content: "\5bb9";
+}
+
+.icon-uni5bbd:before {
+    content: "\5bbd";
+}
+
+.icon-uni5bc4:before {
+    content: "\5bc4";
+}
+
+.icon-uni5bc6:before {
+    content: "\5bc6";
+}
+
+.icon-uni5bdf:before {
+    content: "\5bdf";
+}
+
+.icon-uni5be8:before {
+    content: "\5be8";
+}
+
+.icon-uni5bf9:before {
+    content: "\5bf9";
+}
+
+.icon-uni5bfb:before {
+    content: "\5bfb";
+}
+
+.icon-uni5bfc:before {
+    content: "\5bfc";
+}
+
+.icon-uni5c01:before {
+    content: "\5c01";
+}
+
+.icon-uni5c04:before {
+    content: "\5c04";
+}
+
+.icon-uni5c06:before {
+    content: "\5c06";
+}
+
+.icon-uni5c0f:before {
+    content: "\5c0f";
+}
+
+.icon-uni5c11:before {
+    content: "\5c11";
+}
+
+.icon-uni5c1d:before {
+    content: "\5c1d";
+}
+
+.icon-uni5c31:before {
+    content: "\5c31";
+}
+
+.icon-uni5c3d:before {
+    content: "\5c3d";
+}
+
+.icon-uni5c3e:before {
+    content: "\5c3e";
+}
+
+.icon-uni5c40:before {
+    content: "\5c40";
+}
+
+.icon-uni5c42:before {
+    content: "\5c42";
+}
+
+.icon-uni5c4f:before {
+    content: "\5c4f";
+}
+
+.icon-uni5c55:before {
+    content: "\5c55";
+}
+
+.icon-uni5c71:before {
+    content: "\5c71";
+}
+
+.icon-uni5cf0:before {
+    content: "\5cf0";
+}
+
+.icon-uni5d4c:before {
+    content: "\5d4c";
+}
+
+.icon-uni5ddd:before {
+    content: "\5ddd";
+}
+
+.icon-uni5de5:before {
+    content: "\5de5";
+}
+
+.icon-uni5de6:before {
+    content: "\5de6";
+}
+
+.icon-uni5de8:before {
+    content: "\5de8";
+}
+
+.icon-uni5dee:before {
+    content: "\5dee";
+}
+
+.icon-uni5df1:before {
+    content: "\5df1";
+}
+
+.icon-uni5df2:before {
+    content: "\5df2";
+}
+
+.icon-uni5e03:before {
+    content: "\5e03";
+}
+
+.icon-uni5e26:before {
+    content: "\5e26";
+}
+
+.icon-uni5e27:before {
+    content: "\5e27";
+}
+
+.icon-uni5e38:before {
+    content: "\5e38";
+}
+
+.icon-uni5e45:before {
+    content: "\5e45";
+}
+
+.icon-uni5e72:before {
+    content: "\5e72";
+}
+
+.icon-uni5e73:before {
+    content: "\5e73";
+}
+
+.icon-uni5e74:before {
+    content: "\5e74";
+}
+
+.icon-uni5e76:before {
+    content: "\5e76";
+}
+
+.icon-uni5e7f:before {
+    content: "\5e7f";
+}
+
+.icon-uni5e8f:before {
+    content: "\5e8f";
+}
+
+.icon-uni5e93:before {
+    content: "\5e93";
+}
+
+.icon-uni5e94:before {
+    content: "\5e94";
+}
+
+.icon-uni5e95:before {
+    content: "\5e95";
+}
+
+.icon-uni5e9f:before {
+    content: "\5e9f";
+}
+
+.icon-uni5ea6:before {
+    content: "\5ea6";
+}
+
+.icon-uni5ef6:before {
+    content: "\5ef6";
+}
+
+.icon-uni5efa:before {
+    content: "\5efa";
+}
+
+.icon-uni5f00:before {
+    content: "\5f00";
+}
+
+.icon-uni5f02:before {
+    content: "\5f02";
+}
+
+.icon-uni5f04:before {
+    content: "\5f04";
+}
+
+.icon-uni5f0f:before {
+    content: "\5f0f";
+}
+
+.icon-uni5f15:before {
+    content: "\5f15";
+}
+
+.icon-uni5f26:before {
+    content: "\5f26";
+}
+
+.icon-uni5f3a:before {
+    content: "\5f3a";
+}
+
+.icon-uni5f52:before {
+    content: "\5f52";
+}
+
+.icon-uni5f53:before {
+    content: "\5f53";
+}
+
+.icon-uni5f55:before {
+    content: "\5f55";
+}
+
+.icon-uni5f62:before {
+    content: "\5f62";
+}
+
+.icon-uni5f71:before {
+    content: "\5f71";
+}
+
+.icon-uni5f81:before {
+    content: "\5f81";
+}
+
+.icon-uni5f84:before {
+    content: "\5f84";
+}
+
+.icon-uni5f85:before {
+    content: "\5f85";
+}
+
+.icon-uni5f88:before {
+    content: "\5f88";
+}
+
+.icon-uni5f8b:before {
+    content: "\5f8b";
+}
+
+.icon-uni5f97:before {
+    content: "\5f97";
+}
+
+.icon-uni5faa:before {
+    content: "\5faa";
+}
+
+.icon-uni5fc3:before {
+    content: "\5fc3";
+}
+
+.icon-uni5fc5:before {
+    content: "\5fc5";
+}
+
+.icon-uni5fcd:before {
+    content: "\5fcd";
+}
+
+.icon-uni5fd7:before {
+    content: "\5fd7";
+}
+
+.icon-uni5fe7:before {
+    content: "\5fe7";
+}
+
+.icon-uni5feb:before {
+    content: "\5feb";
+}
+
+.icon-uni5ff5:before {
+    content: "\5ff5";
+}
+
+.icon-uni6001:before {
+    content: "\6001";
+}
+
+.icon-uni601d:before {
+    content: "\601d";
+}
+
+.icon-uni6027:before {
+    content: "\6027";
+}
+
+.icon-uni603b:before {
+    content: "\603b";
+}
+
+.icon-uni6052:before {
+    content: "\6052";
+}
+
+.icon-uni606f:before {
+    content: "\606f";
+}
+
+.icon-uni6070:before {
+    content: "\6070";
+}
+
+.icon-uni6089:before {
+    content: "\6089";
+}
+
+.icon-uni60ac:before {
+    content: "\60ac";
+}
+
+.icon-uni60c5:before {
+    content: "\60c5";
+}
+
+.icon-uni60dc:before {
+    content: "\60dc";
+}
+
+.icon-uni60e8:before {
+    content: "\60e8";
+}
+
+.icon-uni60e9:before {
+    content: "\60e9";
+}
+
+.icon-uni60ef:before {
+    content: "\60ef";
+}
+
+.icon-uni60f3:before {
+    content: "\60f3";
+}
+
+.icon-uni6109:before {
+    content: "\6109";
+}
+
+.icon-uni610f:before {
+    content: "\610f";
+}
+
+.icon-uni611f:before {
+    content: "\611f";
+}
+
+.icon-uni6162:before {
+    content: "\6162";
+}
+
+.icon-uni61c2:before {
+    content: "\61c2";
+}
+
+.icon-uni61d2:before {
+    content: "\61d2";
+}
+
+.icon-uni620f:before {
+    content: "\620f";
+}
+
+.icon-uni6210:before {
+    content: "\6210";
+}
+
+.icon-uni6211:before {
+    content: "\6211";
+}
+
+.icon-uni6216:before {
+    content: "\6216";
+}
+
+.icon-uni622a:before {
+    content: "\622a";
+}
+
+.icon-uni6233:before {
+    content: "\6233";
+}
+
+.icon-uni6237:before {
+    content: "\6237";
+}
+
+.icon-uni6240:before {
+    content: "\6240";
+}
+
+.icon-uni6247:before {
+    content: "\6247";
+}
+
+.icon-uni624b:before {
+    content: "\624b";
+}
+
+.icon-uni624d:before {
+    content: "\624d";
+}
+
+.icon-uni6253:before {
+    content: "\6253";
+}
+
+.icon-uni6258:before {
+    content: "\6258";
+}
+
+.icon-uni6263:before {
+    content: "\6263";
+}
+
+.icon-uni6267:before {
+    content: "\6267";
+}
+
+.icon-uni6269:before {
+    content: "\6269";
+}
+
+.icon-uni626b:before {
+    content: "\626b";
+}
+
+.icon-uni6279:before {
+    content: "\6279";
+}
+
+.icon-uni627e:before {
+    content: "\627e";
+}
+
+.icon-uni627f:before {
+    content: "\627f";
+}
+
+.icon-uni6280:before {
+    content: "\6280";
+}
+
+.icon-uni628a:before {
+    content: "\628a";
+}
+
+.icon-uni6293:before {
+    content: "\6293";
+}
+
+.icon-uni6296:before {
+    content: "\6296";
+}
+
+.icon-uni6298:before {
+    content: "\6298";
+}
+
+.icon-uni62a4:before {
+    content: "\62a4";
+}
+
+.icon-uni62a5:before {
+    content: "\62a5";
+}
+
+.icon-uni62c5:before {
+    content: "\62c5";
+}
+
+.icon-uni62c6:before {
+    content: "\62c6";
+}
+
+.icon-uni62c9:before {
+    content: "\62c9";
+}
+
+.icon-uni62d4:before {
+    content: "\62d4";
+}
+
+.icon-uni62d6:before {
+    content: "\62d6";
+}
+
+.icon-uni62df:before {
+    content: "\62df";
+}
+
+.icon-uni62e9:before {
+    content: "\62e9";
+}
+
+.icon-uni62ec:before {
+    content: "\62ec";
+}
+
+.icon-uni62f7:before {
+    content: "\62f7";
+}
+
+.icon-uni6301:before {
+    content: "\6301";
+}
+
+.icon-uni6302:before {
+    content: "\6302";
+}
+
+.icon-uni6307:before {
+    content: "\6307";
+}
+
+.icon-uni6309:before {
+    content: "\6309";
+}
+
+.icon-uni6316:before {
+    content: "\6316";
+}
+
+.icon-uni6325:before {
+    content: "\6325";
+}
+
+.icon-uni6328:before {
+    content: "\6328";
+}
+
+.icon-uni632f:before {
+    content: "\632f";
+}
+
+.icon-uni6345:before {
+    content: "\6345";
+}
+
+.icon-uni635f:before {
+    content: "\635f";
+}
+
+.icon-uni6362:before {
+    content: "\6362";
+}
+
+.icon-uni636e:before {
+    content: "\636e";
+}
+
+.icon-uni6377:before {
+    content: "\6377";
+}
+
+.icon-uni6389:before {
+    content: "\6389";
+}
+
+.icon-uni6392:before {
+    content: "\6392";
+}
+
+.icon-uni6398:before {
+    content: "\6398";
+}
+
+.icon-uni63a5:before {
+    content: "\63a5";
+}
+
+.icon-uni63a7:before {
+    content: "\63a7";
+}
+
+.icon-uni63cf:before {
+    content: "\63cf";
+}
+
+.icon-uni63d0:before {
+    content: "\63d0";
+}
+
+.icon-uni63d2:before {
+    content: "\63d2";
+}
+
+.icon-uni641c:before {
+    content: "\641c";
+}
+
+.icon-uni641e:before {
+    content: "\641e";
+}
+
+.icon-uni642d:before {
+    content: "\642d";
+}
+
+.icon-uni6447:before {
+    content: "\6447";
+}
+
+.icon-uni6491:before {
+    content: "\6491";
+}
+
+.icon-uni64ad:before {
+    content: "\64ad";
+}
+
+.icon-uni64cd:before {
+    content: "\64cd";
+}
+
+.icon-uni64ce:before {
+    content: "\64ce";
+}
+
+.icon-uni652f:before {
+    content: "\652f";
+}
+
+.icon-uni6536:before {
+    content: "\6536";
+}
+
+.icon-uni6539:before {
+    content: "\6539";
+}
+
+.icon-uni653e:before {
+    content: "\653e";
+}
+
+.icon-uni6545:before {
+    content: "\6545";
+}
+
+.icon-uni6548:before {
+    content: "\6548";
+}
+
+.icon-uni6562:before {
+    content: "\6562";
+}
+
+.icon-uni6570:before {
+    content: "\6570";
+}
+
+.icon-uni6574:before {
+    content: "\6574";
+}
+
+.icon-uni6587:before {
+    content: "\6587";
+}
+
+.icon-uni6599:before {
+    content: "\6599";
+}
+
+.icon-uni65ad:before {
+    content: "\65ad";
+}
+
+.icon-uni65b0:before {
+    content: "\65b0";
+}
+
+.icon-uni65b9:before {
+    content: "\65b9";
+}
+
+.icon-uni65bd:before {
+    content: "\65bd";
+}
+
+.icon-uni65e0:before {
+    content: "\65e0";
+}
+
+.icon-uni65e5:before {
+    content: "\65e5";
+}
+
+.icon-uni65e7:before {
+    content: "\65e7";
+}
+
+.icon-uni65e9:before {
+    content: "\65e9";
+}
+
+.icon-uni65f6:before {
+    content: "\65f6";
+}
+
+.icon-uni660e:before {
+    content: "\660e";
+}
+
+.icon-uni660f:before {
+    content: "\660f";
+}
+
+.icon-uni6613:before {
+    content: "\6613";
+}
+
+.icon-uni661f:before {
+    content: "\661f";
+}
+
+.icon-uni6620:before {
+    content: "\6620";
+}
+
+.icon-uni6628:before {
+    content: "\6628";
+}
+
+.icon-uni662f:before {
+    content: "\662f";
+}
+
+.icon-uni663e:before {
+    content: "\663e";
+}
+
+.icon-uni6655:before {
+    content: "\6655";
+}
+
+.icon-uni666e:before {
+    content: "\666e";
+}
+
+.icon-uni666f:before {
+    content: "\666f";
+}
+
+.icon-uni6670:before {
+    content: "\6670";
+}
+
+.icon-uni6676:before {
+    content: "\6676";
+}
+
+.icon-uni6682:before {
+    content: "\6682";
+}
+
+.icon-uni6696:before {
+    content: "\6696";
+}
+
+.icon-uni6697:before {
+    content: "\6697";
+}
+
+.icon-uni66f4:before {
+    content: "\66f4";
+}
+
+.icon-uni66ff:before {
+    content: "\66ff";
+}
+
+.icon-uni6700:before {
+    content: "\6700";
+}
+
+.icon-uni6708:before {
+    content: "\6708";
+}
+
+.icon-uni6709:before {
+    content: "\6709";
+}
+
+.icon-uni670d:before {
+    content: "\670d";
+}
+
+.icon-uni671b:before {
+    content: "\671b";
+}
+
+.icon-uni671d:before {
+    content: "\671d";
+}
+
+.icon-uni671f:before {
+    content: "\671f";
+}
+
+.icon-uni672a:before {
+    content: "\672a";
+}
+
+.icon-uni672b:before {
+    content: "\672b";
+}
+
+.icon-uni672c:before {
+    content: "\672c";
+}
+
+.icon-uni672f:before {
+    content: "\672f";
+}
+
+.icon-uni673a:before {
+    content: "\673a";
+}
+
+.icon-uni6740:before {
+    content: "\6740";
+}
+
+.icon-uni6742:before {
+    content: "\6742";
+}
+
+.icon-uni6743:before {
+    content: "\6743";
+}
+
+.icon-uni6746:before {
+    content: "\6746";
+}
+
+.icon-uni675f:before {
+    content: "\675f";
+}
+
+.icon-uni6761:before {
+    content: "\6761";
+}
+
+.icon-uni6765:before {
+    content: "\6765";
+}
+
+.icon-uni677f:before {
+    content: "\677f";
+}
+
+.icon-uni6781:before {
+    content: "\6781";
+}
+
+.icon-uni6784:before {
+    content: "\6784";
+}
+
+.icon-uni6790:before {
+    content: "\6790";
+}
+
+.icon-uni679a:before {
+    content: "\679a";
+}
+
+.icon-uni679c:before {
+    content: "\679c";
+}
+
+.icon-uni67b6:before {
+    content: "\67b6";
+}
+
+.icon-uni67d0:before {
+    content: "\67d0";
+}
+
+.icon-uni67d3:before {
+    content: "\67d3";
+}
+
+.icon-uni67e5:before {
+    content: "\67e5";
+}
+
+.icon-uni6807:before {
+    content: "\6807";
+}
+
+.icon-uni6808:before {
+    content: "\6808";
+}
+
+.icon-uni6821:before {
+    content: "\6821";
+}
+
+.icon-uni6837:before {
+    content: "\6837";
+}
+
+.icon-uni6838:before {
+    content: "\6838";
+}
+
+.icon-uni6839:before {
+    content: "\6839";
+}
+
+.icon-uni683c:before {
+    content: "\683c";
+}
+
+.icon-uni6846:before {
+    content: "\6846";
+}
+
+.icon-uni6848:before {
+    content: "\6848";
+}
+
+.icon-uni6851:before {
+    content: "\6851";
+}
+
+.icon-uni6863:before {
+    content: "\6863";
+}
+
+.icon-uni6876:before {
+    content: "\6876";
+}
+
+.icon-uni68c0:before {
+    content: "\68c0";
+}
+
+.icon-uni6982:before {
+    content: "\6982";
+}
+
+.icon-uni6a21:before {
+    content: "\6a21";
+}
+
+.icon-uni6b21:before {
+    content: "\6b21";
+}
+
+.icon-uni6b27:before {
+    content: "\6b27";
+}
+
+.icon-uni6b62:before {
+    content: "\6b62";
+}
+
+.icon-uni6b63:before {
+    content: "\6b63";
+}
+
+.icon-uni6b64:before {
+    content: "\6b64";
+}
+
+.icon-uni6b65:before {
+    content: "\6b65";
+}
+
+.icon-uni6b7b:before {
+    content: "\6b7b";
+}
+
+.icon-uni6b8a:before {
+    content: "\6b8a";
+}
+
+.icon-uni6bb5:before {
+    content: "\6bb5";
+}
+
+.icon-uni6bcf:before {
+    content: "\6bcf";
+}
+
+.icon-uni6bd4:before {
+    content: "\6bd4";
+}
+
+.icon-uni6beb:before {
+    content: "\6beb";
+}
+
+.icon-uni6c14:before {
+    content: "\6c14";
+}
+
+.icon-uni6c34:before {
+    content: "\6c34";
+}
+
+.icon-uni6c38:before {
+    content: "\6c38";
+}
+
+.icon-uni6c42:before {
+    content: "\6c42";
+}
+
+.icon-uni6c47:before {
+    content: "\6c47";
+}
+
+.icon-uni6ca1:before {
+    content: "\6ca1";
+}
+
+.icon-uni6cd5:before {
+    content: "\6cd5";
+}
+
+.icon-uni6ce2:before {
+    content: "\6ce2";
+}
+
+.icon-uni6ce8:before {
+    content: "\6ce8";
+}
+
+.icon-uni6d0b:before {
+    content: "\6d0b";
+}
+
+.icon-uni6d1e:before {
+    content: "\6d1e";
+}
+
+.icon-uni6d32:before {
+    content: "\6d32";
+}
+
+.icon-uni6d3b:before {
+    content: "\6d3b";
+}
+
+.icon-uni6d41:before {
+    content: "\6d41";
+}
+
+.icon-uni6d4b:before {
+    content: "\6d4b";
+}
+
+.icon-uni6d4f:before {
+    content: "\6d4f";
+}
+
+.icon-uni6d6a:before {
+    content: "\6d6a";
+}
+
+.icon-uni6d88:before {
+    content: "\6d88";
+}
+
+.icon-uni6d89:before {
+    content: "\6d89";
+}
+
+.icon-uni6de1:before {
+    content: "\6de1";
+}
+
+.icon-uni6df7:before {
+    content: "\6df7";
+}
+
+.icon-uni6dfb:before {
+    content: "\6dfb";
+}
+
+.icon-uni6e05:before {
+    content: "\6e05";
+}
+
+.icon-uni6e21:before {
+    content: "\6e21";
+}
+
+.icon-uni6e29:before {
+    content: "\6e29";
+}
+
+.icon-uni6e32:before {
+    content: "\6e32";
+}
+
+.icon-uni6e38:before {
+    content: "\6e38";
+}
+
+.icon-uni6e90:before {
+    content: "\6e90";
+}
+
+.icon-uni6ea2:before {
+    content: "\6ea2";
+}
+
+.icon-uni6ee1:before {
+    content: "\6ee1";
+}
+
+.icon-uni6ee4:before {
+    content: "\6ee4";
+}
+
+.icon-uni6fc0:before {
+    content: "\6fc0";
+}
+
+.icon-uni706b:before {
+    content: "\706b";
+}
+
+.icon-uni70b9:before {
+    content: "\70b9";
+}
+
+.icon-uni70e6:before {
+    content: "\70e6";
+}
+
+.icon-uni70f7:before {
+    content: "\70f7";
+}
+
+.icon-uni7136:before {
+    content: "\7136";
+}
+
+.icon-uni7167:before {
+    content: "\7167";
+}
+
+.icon-uni718a:before {
+    content: "\718a";
+}
+
+.icon-uni719f:before {
+    content: "\719f";
+}
+
+.icon-uni7206:before {
+    content: "\7206";
+}
+
+.icon-uni722c:before {
+    content: "\722c";
+}
+
+.icon-uni7231:before {
+    content: "\7231";
+}
+
+.icon-uni7236:before {
+    content: "\7236";
+}
+
+.icon-uni7239:before {
+    content: "\7239";
+}
+
+.icon-uni723d:before {
+    content: "\723d";
+}
+
+.icon-uni7247:before {
+    content: "\7247";
+}
+
+.icon-uni7248:before {
+    content: "\7248";
+}
+
+.icon-uni725b:before {
+    content: "\725b";
+}
+
+.icon-uni7267:before {
+    content: "\7267";
+}
+
+.icon-uni7269:before {
+    content: "\7269";
+}
+
+.icon-uni7279:before {
+    content: "\7279";
+}
+
+.icon-uni72b6:before {
+    content: "\72b6";
+}
+
+.icon-uni72d7:before {
+    content: "\72d7";
+}
+
+.icon-uni72ec:before {
+    content: "\72ec";
+}
+
+.icon-uni732e:before {
+    content: "\732e";
+}
+
+.icon-uni7387:before {
+    content: "\7387";
+}
+
+.icon-uni73a9:before {
+    content: "\73a9";
+}
+
+.icon-uni73af:before {
+    content: "\73af";
+}
+
+.icon-uni73b0:before {
+    content: "\73b0";
+}
+
+.icon-uni7403:before {
+    content: "\7403";
+}
+
+.icon-uni7406:before {
+    content: "\7406";
+}
+
+.icon-uni7434:before {
+    content: "\7434";
+}
+
+.icon-uni74e3:before {
+    content: "\74e3";
+}
+
+.icon-uni751a:before {
+    content: "\751a";
+}
+
+.icon-uni751f:before {
+    content: "\751f";
+}
+
+.icon-uni7528:before {
+    content: "\7528";
+}
+
+.icon-uni7531:before {
+    content: "\7531";
+}
+
+.icon-uni7532:before {
+    content: "\7532";
+}
+
+.icon-uni7535:before {
+    content: "\7535";
+}
+
+.icon-uni754c:before {
+    content: "\754c";
+}
+
+.icon-uni7559:before {
+    content: "\7559";
+}
+
+.icon-uni755c:before {
+    content: "\755c";
+}
+
+.icon-uni7565:before {
+    content: "\7565";
+}
+
+.icon-uni756a:before {
+    content: "\756a";
+}
+
+.icon-uni75bc:before {
+    content: "\75bc";
+}
+
+.icon-uni767e:before {
+    content: "\767e";
+}
+
+.icon-uni7684:before {
+    content: "\7684";
+}
+
+.icon-uni76d7:before {
+    content: "\76d7";
+}
+
+.icon-uni76d8:before {
+    content: "\76d8";
+}
+
+.icon-uni76ee:before {
+    content: "\76ee";
+}
+
+.icon-uni76f4:before {
+    content: "\76f4";
+}
+
+.icon-uni76f8:before {
+    content: "\76f8";
+}
+
+.icon-uni7701:before {
+    content: "\7701";
+}
+
+.icon-uni770b:before {
+    content: "\770b";
+}
+
+.icon-uni771f:before {
+    content: "\771f";
+}
+
+.icon-uni7720:before {
+    content: "\7720";
+}
+
+.icon-uni773c:before {
+    content: "\773c";
+}
+
+.icon-uni7740:before {
+    content: "\7740";
+}
+
+.icon-uni77e5:before {
+    content: "\77e5";
+}
+
+.icon-uni77e9:before {
+    content: "\77e9";
+}
+
+.icon-uni77ed:before {
+    content: "\77ed";
+}
+
+.icon-uni7801:before {
+    content: "\7801";
+}
+
+.icon-uni7814:before {
+    content: "\7814";
+}
+
+.icon-uni7840:before {
+    content: "\7840";
+}
+
+.icon-uni786c:before {
+    content: "\786c";
+}
+
+.icon-uni786e:before {
+    content: "\786e";
+}
+
+.icon-uni788d:before {
+    content: "\788d";
+}
+
+.icon-uni793a:before {
+    content: "\793a";
+}
+
+.icon-uni795e:before {
+    content: "\795e";
+}
+
+.icon-uni7981:before {
+    content: "\7981";
+}
+
+.icon-uni79bb:before {
+    content: "\79bb";
+}
+
+.icon-uni79c1:before {
+    content: "\79c1";
+}
+
+.icon-uni79cd:before {
+    content: "\79cd";
+}
+
+.icon-uni79d1:before {
+    content: "\79d1";
+}
+
+.icon-uni79d2:before {
+    content: "\79d2";
+}
+
+.icon-uni79ef:before {
+    content: "\79ef";
+}
+
+.icon-uni79f0:before {
+    content: "\79f0";
+}
+
+.icon-uni79fb:before {
+    content: "\79fb";
+}
+
+.icon-uni7a0b:before {
+    content: "\7a0b";
+}
+
+.icon-uni7a33:before {
+    content: "\7a33";
+}
+
+.icon-uni7a76:before {
+    content: "\7a76";
+}
+
+.icon-uni7a7a:before {
+    content: "\7a7a";
+}
+
+.icon-uni7a81:before {
+    content: "\7a81";
+}
+
+.icon-uni7a97:before {
+    content: "\7a97";
+}
+
+.icon-uni7acb:before {
+    content: "\7acb";
+}
+
+.icon-uni7ad9:before {
+    content: "\7ad9";
+}
+
+.icon-uni7ae0:before {
+    content: "\7ae0";
+}
+
+.icon-uni7aef:before {
+    content: "\7aef";
+}
+
+.icon-uni7b14:before {
+    content: "\7b14";
+}
+
+.icon-uni7b26:before {
+    content: "\7b26";
+}
+
+.icon-uni7b2c:before {
+    content: "\7b2c";
+}
+
+.icon-uni7b49:before {
+    content: "\7b49";
+}
+
+.icon-uni7b54:before {
+    content: "\7b54";
+}
+
+.icon-uni7b56:before {
+    content: "\7b56";
+}
+
+.icon-uni7b7e:before {
+    content: "\7b7e";
+}
+
+.icon-uni7b80:before {
+    content: "\7b80";
+}
+
+.icon-uni7b97:before {
+    content: "\7b97";
+}
+
+.icon-uni7ba1:before {
+    content: "\7ba1";
+}
+
+.icon-uni7bb1:before {
+    content: "\7bb1";
+}
+
+.icon-uni7bc7:before {
+    content: "\7bc7";
+}
+
+.icon-uni7c4d:before {
+    content: "\7c4d";
+}
+
+.icon-uni7c73:before {
+    content: "\7c73";
+}
+
+.icon-uni7c7b:before {
+    content: "\7c7b";
+}
+
+.icon-uni7cbe:before {
+    content: "\7cbe";
+}
+
+.icon-uni7cfb:before {
+    content: "\7cfb";
+}
+
+.icon-uni7d20:before {
+    content: "\7d20";
+}
+
+.icon-uni7d22:before {
+    content: "\7d22";
+}
+
+.icon-uni7e41:before {
+    content: "\7e41";
+}
+
+.icon-uni7ea2:before {
+    content: "\7ea2";
+}
+
+.icon-uni7ea6:before {
+    content: "\7ea6";
+}
+
+.icon-uni7ea7:before {
+    content: "\7ea7";
+}
+
+.icon-uni7eaa:before {
+    content: "\7eaa";
+}
+
+.icon-uni7eac:before {
+    content: "\7eac";
+}
+
+.icon-uni7eaf:before {
+    content: "\7eaf";
+}
+
+.icon-uni7eb3:before {
+    content: "\7eb3";
+}
+
+.icon-uni7eb7:before {
+    content: "\7eb7";
+}
+
+.icon-uni7ebf:before {
+    content: "\7ebf";
+}
+
+.icon-uni7ec4:before {
+    content: "\7ec4";
+}
+
+.icon-uni7ec6:before {
+    content: "\7ec6";
+}
+
+.icon-uni7ec8:before {
+    content: "\7ec8";
+}
+
+.icon-uni7ecd:before {
+    content: "\7ecd";
+}
+
+.icon-uni7ecf:before {
+    content: "\7ecf";
+}
+
+.icon-uni7ed1:before {
+    content: "\7ed1";
+}
+
+.icon-uni7ed2:before {
+    content: "\7ed2";
+}
+
+.icon-uni7ed3:before {
+    content: "\7ed3";
+}
+
+.icon-uni7ed8:before {
+    content: "\7ed8";
+}
+
+.icon-uni7ed9:before {
+    content: "\7ed9";
+}
+
+.icon-uni7edd:before {
+    content: "\7edd";
+}
+
+.icon-uni7edf:before {
+    content: "\7edf";
+}
+
+.icon-uni7ee7:before {
+    content: "\7ee7";
+}
+
+.icon-uni7eed:before {
+    content: "\7eed";
+}
+
+.icon-uni7ef4:before {
+    content: "\7ef4";
+}
+
+.icon-uni7f16:before {
+    content: "\7f16";
+}
+
+.icon-uni7f1d:before {
+    content: "\7f1d";
+}
+
+.icon-uni7f3a:before {
+    content: "\7f3a";
+}
+
+.icon-uni7f51:before {
+    content: "\7f51";
+}
+
+.icon-uni7f5a:before {
+    content: "\7f5a";
+}
+
+.icon-uni7f6e:before {
+    content: "\7f6e";
+}
+
+.icon-uni7f72:before {
+    content: "\7f72";
+}
+
+.icon-uni7f8e:before {
+    content: "\7f8e";
+}
+
+.icon-uni7fa4:before {
+    content: "\7fa4";
+}
+
+.icon-uni7ffb:before {
+    content: "\7ffb";
+}
+
+.icon-uni8001:before {
+    content: "\8001";
+}
+
+.icon-uni8003:before {
+    content: "\8003";
+}
+
+.icon-uni8005:before {
+    content: "\8005";
+}
+
+.icon-uni800c:before {
+    content: "\800c";
+}
+
+.icon-uni8017:before {
+    content: "\8017";
+}
+
+.icon-uni8054:before {
+    content: "\8054";
+}
+
+.icon-uni8089:before {
+    content: "\8089";
+}
+
+.icon-uni80cc:before {
+    content: "\80cc";
+}
+
+.icon-uni80fd:before {
+    content: "\80fd";
+}
+
+.icon-uni8109:before {
+    content: "\8109";
+}
+
+.icon-uni8111:before {
+    content: "\8111";
+}
+
+.icon-uni811a:before {
+    content: "\811a";
+}
+
+.icon-uni817e:before {
+    content: "\817e";
+}
+
+.icon-uni817f:before {
+    content: "\817f";
+}
+
+.icon-uni81ea:before {
+    content: "\81ea";
+}
+
+.icon-uni81f3:before {
+    content: "\81f3";
+}
+
+.icon-uni81f4:before {
+    content: "\81f4";
+}
+
+.icon-uni822c:before {
+    content: "\822c";
+}
+
+.icon-uni826f:before {
+    content: "\826f";
+}
+
+.icon-uni8272:before {
+    content: "\8272";
+}
+
+.icon-uni827a:before {
+    content: "\827a";
+}
+
+.icon-uni8282:before {
+    content: "\8282";
+}
+
+.icon-uni82af:before {
+    content: "\82af";
+}
+
+.icon-uni82b1:before {
+    content: "\82b1";
+}
+
+.icon-uni82e5:before {
+    content: "\82e5";
+}
+
+.icon-uni8303:before {
+    content: "\8303";
+}
+
+.icon-uni83b7:before {
+    content: "\83b7";
+}
+
+.icon-uni83dc:before {
+    content: "\83dc";
+}
+
+.icon-uni843d:before {
+    content: "\843d";
+}
+
+.icon-uni8457:before {
+    content: "\8457";
+}
+
+.icon-uni84b8:before {
+    content: "\84b8";
+}
+
+.icon-uni84dd:before {
+    content: "\84dd";
+}
+
+.icon-uni8651:before {
+    content: "\8651";
+}
+
+.icon-uni865a:before {
+    content: "\865a";
+}
+
+.icon-uni866b:before {
+    content: "\866b";
+}
+
+.icon-uni867d:before {
+    content: "\867d";
+}
+
+.icon-uni86cb:before {
+    content: "\86cb";
+}
+
+.icon-uni878d:before {
+    content: "\878d";
+}
+
+.icon-uni884c:before {
+    content: "\884c";
+}
+
+.icon-uni8861:before {
+    content: "\8861";
+}
+
+.icon-uni8865:before {
+    content: "\8865";
+}
+
+.icon-uni8868:before {
+    content: "\8868";
+}
+
+.icon-uni88ab:before {
+    content: "\88ab";
+}
+
+.icon-uni88c5:before {
+    content: "\88c5";
+}
+
+.icon-uni8981:before {
+    content: "\8981";
+}
+
+.icon-uni89c1:before {
+    content: "\89c1";
+}
+
+.icon-uni89c2:before {
+    content: "\89c2";
+}
+
+.icon-uni89c4:before {
+    content: "\89c4";
+}
+
+.icon-uni89c6:before {
+    content: "\89c6";
+}
+
+.icon-uni89c8:before {
+    content: "\89c8";
+}
+
+.icon-uni89d2:before {
+    content: "\89d2";
+}
+
+.icon-uni89e3:before {
+    content: "\89e3";
+}
+
+.icon-uni89e6:before {
+    content: "\89e6";
+}
+
+.icon-uni8a00:before {
+    content: "\8a00";
+}
+
+.icon-uni8ba1:before {
+    content: "\8ba1";
+}
+
+.icon-uni8ba4:before {
+    content: "\8ba4";
+}
+
+.icon-uni8ba8:before {
+    content: "\8ba8";
+}
+
+.icon-uni8ba9:before {
+    content: "\8ba9";
+}
+
+.icon-uni8bae:before {
+    content: "\8bae";
+}
+
+.icon-uni8bb0:before {
+    content: "\8bb0";
+}
+
+.icon-uni8bb2:before {
+    content: "\8bb2";
+}
+
+.icon-uni8bb8:before {
+    content: "\8bb8";
+}
+
+.icon-uni8bba:before {
+    content: "\8bba";
+}
+
+.icon-uni8bbd:before {
+    content: "\8bbd";
+}
+
+.icon-uni8bbe:before {
+    content: "\8bbe";
+}
+
+.icon-uni8bbf:before {
+    content: "\8bbf";
+}
+
+.icon-uni8bc1:before {
+    content: "\8bc1";
+}
+
+.icon-uni8bc4:before {
+    content: "\8bc4";
+}
+
+.icon-uni8bc6:before {
+    content: "\8bc6";
+}
+
+.icon-uni8bcd:before {
+    content: "\8bcd";
+}
+
+.icon-uni8bd1:before {
+    content: "\8bd1";
+}
+
+.icon-uni8bd5:before {
+    content: "\8bd5";
+}
+
+.icon-uni8bdd:before {
+    content: "\8bdd";
+}
+
+.icon-uni8be1:before {
+    content: "\8be1";
+}
+
+.icon-uni8be5:before {
+    content: "\8be5";
+}
+
+.icon-uni8be6:before {
+    content: "\8be6";
+}
+
+.icon-uni8bed:before {
+    content: "\8bed";
+}
+
+.icon-uni8bef:before {
+    content: "\8bef";
+}
+
+.icon-uni8bf4:before {
+    content: "\8bf4";
+}
+
+.icon-uni8bfb:before {
+    content: "\8bfb";
+}
+
+.icon-uni8c03:before {
+    content: "\8c03";
+}
+
+.icon-uni8c10:before {
+    content: "\8c10";
+}
+
+.icon-uni8c31:before {
+    content: "\8c31";
+}
+
+.icon-uni8c46:before {
+    content: "\8c46";
+}
+
+.icon-uni8c61:before {
+    content: "\8c61";
+}
+
+.icon-uni8d1d:before {
+    content: "\8d1d";
+}
+
+.icon-uni8d1f:before {
+    content: "\8d1f";
+}
+
+.icon-uni8d21:before {
+    content: "\8d21";
+}
+
+.icon-uni8d23:before {
+    content: "\8d23";
+}
+
+.icon-uni8d25:before {
+    content: "\8d25";
+}
+
+.icon-uni8d28:before {
+    content: "\8d28";
+}
+
+.icon-uni8d2d:before {
+    content: "\8d2d";
+}
+
+.icon-uni8d39:before {
+    content: "\8d39";
+}
+
+.icon-uni8d44:before {
+    content: "\8d44";
+}
+
+.icon-uni8d4b:before {
+    content: "\8d4b";
+}
+
+.icon-uni8d56:before {
+    content: "\8d56";
+}
+
+.icon-uni8d77:before {
+    content: "\8d77";
+}
+
+.icon-uni8d85:before {
+    content: "\8d85";
+}
+
+.icon-uni8d8a:before {
+    content: "\8d8a";
+}
+
+.icon-uni8da3:before {
+    content: "\8da3";
+}
+
+.icon-uni8db3:before {
+    content: "\8db3";
+}
+
+.icon-uni8dc3:before {
+    content: "\8dc3";
+}
+
+.icon-uni8dd1:before {
+    content: "\8dd1";
+}
+
+.icon-uni8ddd:before {
+    content: "\8ddd";
+}
+
+.icon-uni8ddf:before {
+    content: "\8ddf";
+}
+
+.icon-uni8de8:before {
+    content: "\8de8";
+}
+
+.icon-uni8def:before {
+    content: "\8def";
+}
+
+.icon-uni8df3:before {
+    content: "\8df3";
+}
+
+.icon-uni8df5:before {
+    content: "\8df5";
+}
+
+.icon-uni8e22:before {
+    content: "\8e22";
+}
+
+.icon-uni8e2a:before {
+    content: "\8e2a";
+}
+
+.icon-uni8eab:before {
+    content: "\8eab";
+}
+
+.icon-uni8f66:before {
+    content: "\8f66";
+}
+
+.icon-uni8f6c:before {
+    content: "\8f6c";
+}
+
+.icon-uni8f6f:before {
+    content: "\8f6f";
+}
+
+.icon-uni8f7b:before {
+    content: "\8f7b";
+}
+
+.icon-uni8f7d:before {
+    content: "\8f7d";
+}
+
+.icon-uni8f83:before {
+    content: "\8f83";
+}
+
+.icon-uni8f90:before {
+    content: "\8f90";
+}
+
+.icon-uni8f91:before {
+    content: "\8f91";
+}
+
+.icon-uni8f93:before {
+    content: "\8f93";
+}
+
+.icon-uni8fa8:before {
+    content: "\8fa8";
+}
+
+.icon-uni8fb9:before {
+    content: "\8fb9";
+}
+
+.icon-uni8fbe:before {
+    content: "\8fbe";
+}
+
+.icon-uni8fc1:before {
+    content: "\8fc1";
+}
+
+.icon-uni8fc7:before {
+    content: "\8fc7";
+}
+
+.icon-uni8fd0:before {
+    content: "\8fd0";
+}
+
+.icon-uni8fd1:before {
+    content: "\8fd1";
+}
+
+.icon-uni8fd4:before {
+    content: "\8fd4";
+}
+
+.icon-uni8fd8:before {
+    content: "\8fd8";
+}
+
+.icon-uni8fd9:before {
+    content: "\8fd9";
+}
+
+.icon-uni8fdb:before {
+    content: "\8fdb";
+}
+
+.icon-uni8fdc:before {
+    content: "\8fdc";
+}
+
+.icon-uni8fde:before {
+    content: "\8fde";
+}
+
+.icon-uni8fed:before {
+    content: "\8fed";
+}
+
+.icon-uni8ff0:before {
+    content: "\8ff0";
+}
+
+.icon-uni8ffd:before {
+    content: "\8ffd";
+}
+
+.icon-uni9001:before {
+    content: "\9001";
+}
+
+.icon-uni9002:before {
+    content: "\9002";
+}
+
+.icon-uni9006:before {
+    content: "\9006";
+}
+
+.icon-uni9009:before {
+    content: "\9009";
+}
+
+.icon-uni9010:before {
+    content: "\9010";
+}
+
+.icon-uni9012:before {
+    content: "\9012";
+}
+
+.icon-uni9014:before {
+    content: "\9014";
+}
+
+.icon-uni901a:before {
+    content: "\901a";
+}
+
+.icon-uni901f:before {
+    content: "\901f";
+}
+
+.icon-uni9020:before {
+    content: "\9020";
+}
+
+.icon-uni903b:before {
+    content: "\903b";
+}
+
+.icon-uni903c:before {
+    content: "\903c";
+}
+
+.icon-uni9047:before {
+    content: "\9047";
+}
+
+.icon-uni904d:before {
+    content: "\904d";
+}
+
+.icon-uni9053:before {
+    content: "\9053";
+}
+
+.icon-uni907f:before {
+    content: "\907f";
+}
+
+.icon-uni90a3:before {
+    content: "\90a3";
+}
+
+.icon-uni90ae:before {
+    content: "\90ae";
+}
+
+.icon-uni90e8:before {
+    content: "\90e8";
+}
+
+.icon-uni90fd:before {
+    content: "\90fd";
+}
+
+.icon-uni914d:before {
+    content: "\914d";
+}
+
+.icon-uni91c7:before {
+    content: "\91c7";
+}
+
+.icon-uni91ca:before {
+    content: "\91ca";
+}
+
+.icon-uni91cc:before {
+    content: "\91cc";
+}
+
+.icon-uni91cd:before {
+    content: "\91cd";
+}
+
+.icon-uni91cf:before {
+    content: "\91cf";
+}
+
+.icon-uni9488:before {
+    content: "\9488";
+}
+
+.icon-uni949f:before {
+    content: "\949f";
+}
+
+.icon-uni94a2:before {
+    content: "\94a2";
+}
+
+.icon-uni94ae:before {
+    content: "\94ae";
+}
+
+.icon-uni94fe:before {
+    content: "\94fe";
+}
+
+.icon-uni9500:before {
+    content: "\9500";
+}
+
+.icon-uni9519:before {
+    content: "\9519";
+}
+
+.icon-uni952e:before {
+    content: "\952e";
+}
+
+.icon-uni957f:before {
+    content: "\957f";
+}
+
+.icon-uni95e8:before {
+    content: "\95e8";
+}
+
+.icon-uni95ed:before {
+    content: "\95ed";
+}
+
+.icon-uni95ee:before {
+    content: "\95ee";
+}
+
+.icon-uni95f4:before {
+    content: "\95f4";
+}
+
+.icon-uni95f9:before {
+    content: "\95f9";
+}
+
+.icon-uni9605:before {
+    content: "\9605";
+}
+
+.icon-uni9632:before {
+    content: "\9632";
+}
+
+.icon-uni9633:before {
+    content: "\9633";
+}
+
+.icon-uni9635:before {
+    content: "\9635";
+}
+
+.icon-uni9636:before {
+    content: "\9636";
+}
+
+.icon-uni9644:before {
+    content: "\9644";
+}
+
+.icon-uni9645:before {
+    content: "\9645";
+}
+
+.icon-uni9646:before {
+    content: "\9646";
+}
+
+.icon-uni964d:before {
+    content: "\964d";
+}
+
+.icon-uni9650:before {
+    content: "\9650";
+}
+
+.icon-uni9664:before {
+    content: "\9664";
+}
+
+.icon-uni9677:before {
+    content: "\9677";
+}
+
+.icon-uni968f:before {
+    content: "\968f";
+}
+
+.icon-uni969c:before {
+    content: "\969c";
+}
+
+.icon-uni96be:before {
+    content: "\96be";
+}
+
+.icon-uni96c5:before {
+    content: "\96c5";
+}
+
+.icon-uni96c6:before {
+    content: "\96c6";
+}
+
+.icon-uni96ea:before {
+    content: "\96ea";
+}
+
+.icon-uni96f6:before {
+    content: "\96f6";
+}
+
+.icon-uni96f7:before {
+    content: "\96f7";
+}
+
+.icon-uni9700:before {
+    content: "\9700";
+}
+
+.icon-uni9759:before {
+    content: "\9759";
+}
+
+.icon-uni975e:before {
+    content: "\975e";
+}
+
+.icon-uni9760:before {
+    content: "\9760";
+}
+
+.icon-uni9762:before {
+    content: "\9762";
+}
+
+.icon-uni9769:before {
+    content: "\9769";
+}
+
+.icon-uni97f3:before {
+    content: "\97f3";
+}
+
+.icon-uni9875:before {
+    content: "\9875";
+}
+
+.icon-uni9876:before {
+    content: "\9876";
+}
+
+.icon-uni9879:before {
+    content: "\9879";
+}
+
+.icon-uni987a:before {
+    content: "\987a";
+}
+
+.icon-uni987b:before {
+    content: "\987b";
+}
+
+.icon-uni9884:before {
+    content: "\9884";
+}
+
+.icon-uni9891:before {
+    content: "\9891";
+}
+
+.icon-uni9898:before {
+    content: "\9898";
+}
+
+.icon-uni989c:before {
+    content: "\989c";
+}
+
+.icon-uni989d:before {
+    content: "\989d";
+}
+
+.icon-uni98a0:before {
+    content: "\98a0";
+}
+
+.icon-uni98ce:before {
+    content: "\98ce";
+}
+
+.icon-uni98d8:before {
+    content: "\98d8";
+}
+
+.icon-uni9988:before {
+    content: "\9988";
+}
+
+.icon-uni9996:before {
+    content: "\9996";
+}
+
+.icon-uni9a6c:before {
+    content: "\9a6c";
+}
+
+.icon-uni9a71:before {
+    content: "\9a71";
+}
+
+.icon-uni9a8c:before {
+    content: "\9a8c";
+}
+
+.icon-uni9aa4:before {
+    content: "\9aa4";
+}
+
+.icon-uni9ad8:before {
+    content: "\9ad8";
+}
+
+.icon-uni9cd6:before {
+    content: "\9cd6";
+}
+
+.icon-uni9e1f:before {
+    content: "\9e1f";
+}
+
+.icon-uni9e45:before {
+    content: "\9e45";
+}
+
+.icon-uni9ea6:before {
+    content: "\9ea6";
+}
+
+.icon-uni9ebb:before {
+    content: "\9ebb";
+}
+
+.icon-uni9ec4:before {
+    content: "\9ec4";
+}
+
+.icon-uni9ed1:before {
+    content: "\9ed1";
+}
+
+.icon-uni9ed8:before {
+    content: "\9ed8";
+}
+
+.icon-uni9f20:before {
+    content: "\9f20";
+}
+
+.icon-uni9f99:before {
+    content: "\9f99";
+}
+
+.icon-uniff08:before {
+    content: "\ff08";
+}
+
+.icon-uniff09:before {
+    content: "\ff09";
+}
+
+.icon-uniff0c:before {
+    content: "\ff0c";
+}
+
+.icon-uniff1a:before {
+    content: "\ff1a";
+}
+
+.icon-uniff1b:before {
+    content: "\ff1b";
+}
+
+.icon-uniff1f:before {
+    content: "\ff1f";
+}
+
+

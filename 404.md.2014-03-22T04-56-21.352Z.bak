@@ -1,0 +1,22 @@
+title: 404
+date: 2014-03-19 21:26:32
+no_comment: true
+no_title: true
+no_share: true
+no_footer: true
+no_divider: true
+---
+
+{% rawblock %}
+<div class="div-404">
+<div class="h1-404">404</div>
+<img class="cat-fail" src="/images/54d6a0fe580d2fc8fb394aafe345071f9ba7fd07.gif" />
+</div>
+
+{% endrawblock %}
+{% quote %}
+
+{% endquote %}
+
+![](http://images.thehollywoodgossip.com/iu/t_full/v1387570518/cat-jump-fail.gif)
+

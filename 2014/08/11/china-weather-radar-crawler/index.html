@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript">
+    var CoCat = {
+      isHome: false,
+      isPost: true,
+      isArchive: false
+    };
+  </script>
+  
+  <title>中国区气象雷达数据爬虫 | CatX</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="作为一个数据控，爱好各种实时数据，比如中央气象台的气象雷达数据。最近在进行的一个HTML5项目，就是利用Canvas和WebGL，把外观土鳖的官方数据，变成洋气+实用的交互式地图。由于HTML5 Canvas CORS的限制，在没有服务器配合的情况下，无法跨域载入图片，然后getImageData，因此就做了一个爬虫。
+经过一番试验，发现国外的免费云服务只有GAE能够访问nmc.gov.cn，确定">
+<meta property="og:type" content="article">
+<meta property="og:title" content="中国区气象雷达数据爬虫">
+<meta property="og:url" content="http://catx.me/2014/08/11/china-weather-radar-crawler/index.html">
+<meta property="og:site_name" content="CatX">
+<meta property="og:description" content="作为一个数据控，爱好各种实时数据，比如中央气象台的气象雷达数据。最近在进行的一个HTML5项目，就是利用Canvas和WebGL，把外观土鳖的官方数据，变成洋气+实用的交互式地图。由于HTML5 Canvas CORS的限制，在没有服务器配合的情况下，无法跨域载入图片，然后getImageData，因此就做了一个爬虫。
+经过一番试验，发现国外的免费云服务只有GAE能够访问nmc.gov.cn，确定">
+<meta property="og:updated_time" content="2014-08-30T22:33:13.533Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="中国区气象雷达数据爬虫">
+<meta name="twitter:description" content="作为一个数据控，爱好各种实时数据，比如中央气象台的气象雷达数据。最近在进行的一个HTML5项目，就是利用Canvas和WebGL，把外观土鳖的官方数据，变成洋气+实用的交互式地图。由于HTML5 Canvas CORS的限制，在没有服务器配合的情况下，无法跨域载入图片，然后getImageData，因此就做了一个爬虫。
+经过一番试验，发现国外的免费云服务只有GAE能够访问nmc.gov.cn，确定">
+  <!-- Swiftype -->
+  <meta class="swiftype" name="title" data-type="string" content="中国区气象雷达数据爬虫">
+
+  
+    <link rel="alternative" href="/atom.xml" title="CatX" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  
+</head>
+
+<body>
+  <div id="app"><div class="master is-post" data-reactid=".lsu0w8464g" data-react-checksum="1209689990"><div class="top-banner" style="display:none;" data-reactid=".lsu0w8464g.0"><span data-reactid=".lsu0w8464g.0.0">Banner Message</span><a href="#" data-reactid=".lsu0w8464g.0.1">Go</a></div><nav class="navbar navbar-inverse" style="text-shadow:0px 0px 10px rgba(0, 0, 0, 0.1), 0px 0px 5px rgba(0, 0, 0, 0.1), 0px 0px 10px #2b6a7d, 0px 0px 5px #2b6a7d;" data-reactid=".lsu0w8464g.1"><div class="container" data-reactid=".lsu0w8464g.1.0"><div class="navbar-header" data-reactid=".lsu0w8464g.1.0.0"><a class="navbar-link hamburger-menu icon-link" href="javascript:void(0)" data-reactid=".lsu0w8464g.1.0.0.0"><i class="fa fa-2x fa-bars" data-reactid=".lsu0w8464g.1.0.0.0.0"></i></a><a class="navbar-brand" href="#" data-reactid=".lsu0w8464g.1.0.0.1"><i class="logo icon cocat-logo" data-reactid=".lsu0w8464g.1.0.0.1.0"></i><span data-reactid=".lsu0w8464g.1.0.0.1.1">CatX</span></a><span data-reactid=".lsu0w8464g.1.0.0.2"></span></div><div class="collapse navbar-collapse" data-reactid=".lsu0w8464g.1.0.1"><form class="navbar-form navbar-right" role="search" data-reactid=".lsu0w8464g.1.0.1.0"><div class="form-group" data-reactid=".lsu0w8464g.1.0.1.0.0"><input type="text" class="form-control" placeholder="Search" data-reactid=".lsu0w8464g.1.0.1.0.0.0"/></div></form><ul class="nav navbar-nav navbar-right" data-reactid=".lsu0w8464g.1.0.1.1"><li class="" data-reactid=".lsu0w8464g.1.0.1.1.$Home"><a class="" href="/" data-reactid=".lsu0w8464g.1.0.1.1.$Home.0">Home</a></li><li class="" data-reactid=".lsu0w8464g.1.0.1.1.$Archives"><a class="" href="/archives/" data-reactid=".lsu0w8464g.1.0.1.1.$Archives.0">Archives</a></li></ul></div></div></nav><div class="post-wrapper" data-reactid=".lsu0w8464g.2"><section id="preview" style="background-color:#2b6a7d;" class="dark" data-reactid=".lsu0w8464g.2.0"><div class="intro-wrapper" data-reactid=".lsu0w8464g.2.0.0"><div class="container" data-reactid=".lsu0w8464g.2.0.0.0"><div class="row" data-reactid=".lsu0w8464g.2.0.0.0.0"><div class="feature-image col-sm-8 col-sm-push-4 col-xs-12" data-reactid=".lsu0w8464g.2.0.0.0.0.0"><img alt="Feature image" src="/image/stock/3.jpg" data-reactid=".lsu0w8464g.2.0.0.0.0.0.0"/></div><div style="text-shadow:0px 0px 10px rgba(0, 0, 0, 0.1), 0px 0px 5px rgba(0, 0, 0, 0.1), 0px 0px 10px #2b6a7d, 0px 0px 5px #2b6a7d;" class="post-title col-sm-4 col-sm-pull-8 col-xs-12 col-xs-12" data-reactid=".lsu0w8464g.2.0.0.0.0.1"><h1 data-reactid=".lsu0w8464g.2.0.0.0.0.1.0">中国区气象雷达数据爬虫</h1><div class="post-intro" data-reactid=".lsu0w8464g.2.0.0.0.0.1.1"></div></div></div></div></div></section><section id="post-action" data-reactid=".lsu0w8464g.2.1"><div class="container" data-reactid=".lsu0w8464g.2.1.0"><div class="post-socials" data-reactid=".lsu0w8464g.2.1.0.0"><div class="like-button" data-reactid=".lsu0w8464g.2.1.0.0.0"><a class="social icon-link" href="javascript:void(0);" data-reactid=".lsu0w8464g.2.1.0.0.0.0"><i class="fa fa-2 fa-heart-o" data-reactid=".lsu0w8464g.2.1.0.0.0.0.0"></i></a></div><span data-reactid=".lsu0w8464g.2.1.0.0.1">TODO: duoshuo</span></div><div class="action-buttons" data-reactid=".lsu0w8464g.2.1.0.1">TODO: action buttons</div></div></section><article data-reactid=".lsu0w8464g.2.2"><div class="container" data-reactid=".lsu0w8464g.2.2.0"><p>作为一个数据控，爱好各种实时数据，比如中央气象台的<a href="http://www.nmc.gov.cn/publish/radar/stations-chongqing.htm" target="_blank" rel="external">气象雷达</a>数据。最近在进行的一个HTML5项目，就是利用Canvas和WebGL，把外观土鳖的官方数据，变成洋气+实用的交互式地图。由于HTML5 Canvas CORS的限制，在没有服务器配合的情况下，无法跨域载入图片，然后<code>getImageData</code>，因此就做了一个爬虫。</p>
+<p>经过一番试验，发现国外的免费云服务只有GAE能够访问nmc.gov.cn，确定爬虫在GAE上安家了。大致计算了下数据量，全国167个雷达站，平均10分钟更新1帧，每帧是一幅约35KB的GIF图像，一天下来就至少800+M的数据，放GAE上不现实。同时前端也需要<code>.json</code>文件，描述雷达站信息以及数据帧列表，所以还需要数据库存储，而GAE坑爹的datastore quota，一天只能5w次读写，爬虫大概跑3圈就爆了。在这样一些约束下，最后脑洞大开的结合GitHub API，把数据全存到一个GitHub repository里，然后再把git tree拖回来当数据库用，解决问题。</p>
+<p>目前在GAE上部署了两个实例，分时运行，因为bandwidth quota大概只能支撑半天，然后每天删除repository重建一次，避免超过GitHub的quota。</p>
+<p>除了爬图片，地图叠加层的对其需要知道雷达站的坐标，以及数据的范围（即图片上的“数据范围：xxx km”），前者通过之前人肉爬到的一个包含全国雷达站坐标的xml文件解决问题。<br>至于数据范围没有找到官方的数据，最后写了一个简单的OCR算法直接从图片上识别。</p>
+<h2 id="u9644_u8BB0_uFF1A_u7528GitHub_API_u521B_u5EFAcommit_u6D41_u7A0B"><a href="#u9644_u8BB0_uFF1A_u7528GitHub_API_u521B_u5EFAcommit_u6D41_u7A0B" class="headerlink" title="附记：用GitHub API创建commit流程"></a>附记：用GitHub API创建commit流程</h2><p>GitHub提供了<a href="https://developer.github.com/v3/repos/contents/" target="_blank" rel="external">Content API</a>，可以方便的对单个文件进行CRUD操作，每次操作产生1个commit。<br>如果需要一次commit多个文件（比如这个爬虫每次cron会新增数百文件），这样显然不实际。<br>更好的做法是通过<a href="https://developer.github.com/v3/git/" target="_blank" rel="external">Git Data API</a>，模拟git创建一次commit的过程。<br>之前做git私有传输协议的经验立即发挥作，轻车熟路的解决，流程如下：</p>
+<ol>
+<li>用<a href="https://developer.github.com/v3/git/blobs/" target="_blank" rel="external">Blob API</a>为每个文件创建一个blob</li>
+<li>用<a href="https://developer.github.com/v3/git/trees/" target="_blank" rel="external">Tree API</a>为每个子文件夹创建一个tree，并添加其中文件对应的blob</li>
+<li>用<a href="https://developer.github.com/v3/git/commits/" target="_blank" rel="external">Commit API</a>读出要commit分支最新的commit，以及commit对应的tree</li>
+<li>创建root tree，未改变的文件/文件夹需要原封不动的在tree里面保留，插入/替换新增的blob/tree</li>
+<li>创建commit，tree指向新的root tree，parent指向分支最新commit</li>
+<li>用<a href="https://developer.github.com/v3/git/refs/" target="_blank" rel="external">Reference API</a>更新分支的ref，指向新创建的commit</li>
+</ol>
+<p>如果操作中断或重复操作，blob/tree都不会导致多余的数据产生（纯浪费上传带宽而已）。<br>因为git用SHA1 Digest作为所有git object的文件名，同内容的blob/tree不会重复。<br>需要注意一个例外，commit由于包含了时间戳，会重复创建。</p>
+<p>当然最好封装好的library，会省不少事。<br>比如我在这个项目里用到的python library是<a href="https://github.com/jacquev6/PyGithub" target="_blank" rel="external">PyGitHub</a>，几个月前给这个项目发过pull request增加了些功能，比较熟悉用起来顺手。</p>
+<h2 id="u94FE_u63A5"><a href="#u94FE_u63A5" class="headerlink" title="链接"></a>链接</h2><ul>
+<li>源码: <a href="https://github.com/catx-weather/radar-bot" target="_blank" rel="external">radar-bot</a></li>
+<li>爬到的数据：<a href="https://github.com/catx-weather/data" target="_blank" rel="external">data</a></li>
+<li>OCR工具：<a href="https://github.com/catx-weather/frame-range-ocr" target="_blank" rel="external">Frame Range OCR</a></li>
+</ul>
+</div></article></div><footer class="footer" data-reactid=".lsu0w8464g.3"><div class="container" data-reactid=".lsu0w8464g.3.0"><div class="row" data-reactid=".lsu0w8464g.3.0.0"><div class="col-md-6 footer-left" data-reactid=".lsu0w8464g.3.0.0.0"><p data-reactid=".lsu0w8464g.3.0.0.0.0"><span data-reactid=".lsu0w8464g.3.0.0.0.0.0"><span data-reactid=".lsu0w8464g.3.0.0.0.0.0.0">© 2015 </span><span data-reactid=".lsu0w8464g.3.0.0.0.0.0.1">CatX</span><span data-reactid=".lsu0w8464g.3.0.0.0.0.0.2"> by </span><a href="#" data-reactid=".lsu0w8464g.3.0.0.0.0.0.3">AKFish</a><span data-reactid=".lsu0w8464g.3.0.0.0.0.0.4">. </span></span><span data-reactid=".lsu0w8464g.3.0.0.0.0.1"><a href="https://github.com/akfish/hexo-cocat-theme" data-reactid=".lsu0w8464g.3.0.0.0.0.1.0">CoCat</a><span data-reactid=".lsu0w8464g.3.0.0.0.0.1.1"> Theme by </span><a href="http://catx.me" data-reactid=".lsu0w8464g.3.0.0.0.0.1.2">AKFish</a></span></p><ul data-reactid=".lsu0w8464g.3.0.0.0.1"><li data-reactid=".lsu0w8464g.3.0.0.0.1.$admin@example=1com"><a href="mailto:admin@example.com" target="_blank" data-reactid=".lsu0w8464g.3.0.0.0.1.$admin@example=1com.0">admin@example.com</a></li><li data-reactid=".lsu0w8464g.3.0.0.0.1.$About"><a href="/about.html" target="_blank" data-reactid=".lsu0w8464g.3.0.0.0.1.$About.0">About</a></li><li data-reactid=".lsu0w8464g.3.0.0.0.1.$Terms"><a href="/terms.html" target="_blank" data-reactid=".lsu0w8464g.3.0.0.0.1.$Terms.0">Terms</a></li><li data-reactid=".lsu0w8464g.3.0.0.0.1.$FAQ"><a href="/faq.html" target="_blank" data-reactid=".lsu0w8464g.3.0.0.0.1.$FAQ.0">FAQ</a></li></ul></div><div class="col-md-6 footer-socials" data-reactid=".lsu0w8464g.3.0.0.1"><a style="background:transparent;" class="social icon-link github" href="https://github.com/user" target="_blank" data-reactid=".lsu0w8464g.3.0.0.1.$github"><i class="fa fa-2 fa-github" data-reactid=".lsu0w8464g.3.0.0.1.$github.0"></i></a><a style="background:transparent;" class="social icon-link twitter" href="https://twitter.com/user" target="_blank" data-reactid=".lsu0w8464g.3.0.0.1.$twitter"><i class="fa fa-2 fa-twitter" data-reactid=".lsu0w8464g.3.0.0.1.$twitter.0"></i></a><a style="background:transparent;" class="social icon-link facebook" href="https://facebook.com/user" target="_blank" data-reactid=".lsu0w8464g.3.0.0.1.$facebook"><i class="fa fa-2 fa-facebook" data-reactid=".lsu0w8464g.3.0.0.1.$facebook.0"></i></a><a style="background:transparent;" class="social icon-link google" href="https://plus.google.com/user" target="_blank" data-reactid=".lsu0w8464g.3.0.0.1.$google"><i class="fa fa-2 fa-google-plus-square" data-reactid=".lsu0w8464g.3.0.0.1.$google.0"></i></a><a style="background:transparent;" class="social icon-link dribbble" href="https://dribbble.com/user" target="_blank" data-reactid=".lsu0w8464g.3.0.0.1.$dribbble"><i class="fa fa-2 fa-dribbble" data-reactid=".lsu0w8464g.3.0.0.1.$dribbble.0"></i></a><a style="background:transparent;" class="social icon-link rss" href="/atom.xml" target="_blank" data-reactid=".lsu0w8464g.3.0.0.1.$rss"><i class="fa fa-2 fa-rss" data-reactid=".lsu0w8464g.3.0.0.1.$rss.0"></i></a></div></div></div></footer></div></div>
+
+  <script src="/script/cocat.js" type="text/javascript"></script>
+  <script type="text/javascript" src="/react_bundle.js"></script>
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</body>
+</html>

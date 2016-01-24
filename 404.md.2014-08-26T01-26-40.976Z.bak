@@ -1,0 +1,16 @@
+title: 404
+date: 2014-03-19 21:26:32
+no_comment: true
+no_title: true
+no_share: true
+no_footer: true
+no_divider: true
+---
+
+{% rawblock %}
+<div class="div-404">
+<div class="h1-404">404</div>
+<img class="cat-fail" src="/images/cat-jump-fail.gif" />
+</div>
+{% endrawblock %}
+

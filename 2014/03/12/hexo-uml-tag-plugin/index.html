@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript">
+    var CoCat = {
+      isHome: false,
+      isPost: true,
+      isArchive: false
+    };
+  </script>
+  
+  <title>Hexo UML插件 | CatX</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="介绍技术类博客总是不可避免的要插入各种UML图，昨天偶然发现一个有意思的Javascript库Jumly，用于渲染UML sequence diagram和robustness diagram。于是制作了一个hexo插件，便于在博客中插入。
+Sequence Diagram1@found &amp;#34;You&amp;#34;, -&amp;#62;&amp;#10;  @message &amp;#34;Think&amp;#34;, -">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo UML插件">
+<meta property="og:url" content="http://catx.me/2014/03/12/hexo-uml-tag-plugin/index.html">
+<meta property="og:site_name" content="CatX">
+<meta property="og:description" content="介绍技术类博客总是不可避免的要插入各种UML图，昨天偶然发现一个有意思的Javascript库Jumly，用于渲染UML sequence diagram和robustness diagram。于是制作了一个hexo插件，便于在博客中插入。
+Sequence Diagram1@found &amp;#34;You&amp;#34;, -&amp;#62;&amp;#10;  @message &amp;#34;Think&amp;#34;, -">
+<meta property="og:updated_time" content="2014-11-02T15:34:22.885Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo UML插件">
+<meta name="twitter:description" content="介绍技术类博客总是不可避免的要插入各种UML图，昨天偶然发现一个有意思的Javascript库Jumly，用于渲染UML sequence diagram和robustness diagram。于是制作了一个hexo插件，便于在博客中插入。
+Sequence Diagram1@found &amp;#34;You&amp;#34;, -&amp;#62;&amp;#10;  @message &amp;#34;Think&amp;#34;, -">
+  <!-- Swiftype -->
+  <meta class="swiftype" name="title" data-type="string" content="Hexo UML插件">
+
+  
+    <link rel="alternative" href="/atom.xml" title="CatX" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  
+</head>
+
+<body>
+  <div id="app"><div class="master is-post" data-reactid=".263kizasbnk" data-react-checksum="-206288333"><div class="top-banner" style="display:none;" data-reactid=".263kizasbnk.0"><span data-reactid=".263kizasbnk.0.0">Banner Message</span><a href="#" data-reactid=".263kizasbnk.0.1">Go</a></div><nav class="navbar navbar-inverse" style="text-shadow:0px 0px 10px rgba(0, 0, 0, 0.1), 0px 0px 5px rgba(0, 0, 0, 0.1), 0px 0px 10px #2f5a75, 0px 0px 5px #2f5a75;" data-reactid=".263kizasbnk.1"><div class="container" data-reactid=".263kizasbnk.1.0"><div class="navbar-header" data-reactid=".263kizasbnk.1.0.0"><a class="navbar-link hamburger-menu icon-link" href="javascript:void(0)" data-reactid=".263kizasbnk.1.0.0.0"><i class="fa fa-2x fa-bars" data-reactid=".263kizasbnk.1.0.0.0.0"></i></a><a class="navbar-brand" href="#" data-reactid=".263kizasbnk.1.0.0.1"><i class="logo icon cocat-logo" data-reactid=".263kizasbnk.1.0.0.1.0"></i><span data-reactid=".263kizasbnk.1.0.0.1.1">CatX</span></a><span data-reactid=".263kizasbnk.1.0.0.2"></span></div><div class="collapse navbar-collapse" data-reactid=".263kizasbnk.1.0.1"><form class="navbar-form navbar-right" role="search" data-reactid=".263kizasbnk.1.0.1.0"><div class="form-group" data-reactid=".263kizasbnk.1.0.1.0.0"><input type="text" class="form-control" placeholder="Search" data-reactid=".263kizasbnk.1.0.1.0.0.0"/></div></form><ul class="nav navbar-nav navbar-right" data-reactid=".263kizasbnk.1.0.1.1"><li class="" data-reactid=".263kizasbnk.1.0.1.1.$Home"><a class="" href="/" data-reactid=".263kizasbnk.1.0.1.1.$Home.0">Home</a></li><li class="" data-reactid=".263kizasbnk.1.0.1.1.$Archives"><a class="" href="/archives/" data-reactid=".263kizasbnk.1.0.1.1.$Archives.0">Archives</a></li></ul></div></div></nav><div class="post-wrapper" data-reactid=".263kizasbnk.2"><section id="preview" style="background-color:#2f5a75;" class="dark" data-reactid=".263kizasbnk.2.0"><div class="intro-wrapper" data-reactid=".263kizasbnk.2.0.0"><div class="container" data-reactid=".263kizasbnk.2.0.0.0"><div class="row" data-reactid=".263kizasbnk.2.0.0.0.0"><div class="feature-image col-sm-8 col-sm-push-4 col-xs-12" data-reactid=".263kizasbnk.2.0.0.0.0.0"><img alt="Feature image" src="/image/stock/2.jpg" data-reactid=".263kizasbnk.2.0.0.0.0.0.0"/></div><div style="text-shadow:0px 0px 10px rgba(0, 0, 0, 0.1), 0px 0px 5px rgba(0, 0, 0, 0.1), 0px 0px 10px #2f5a75, 0px 0px 5px #2f5a75;" class="post-title col-sm-4 col-sm-pull-8 col-xs-12 col-xs-12" data-reactid=".263kizasbnk.2.0.0.0.0.1"><h1 data-reactid=".263kizasbnk.2.0.0.0.0.1.0">Hexo UML插件</h1><div class="post-intro" data-reactid=".263kizasbnk.2.0.0.0.0.1.1"></div></div></div></div></div></section><section id="post-action" data-reactid=".263kizasbnk.2.1"><div class="container" data-reactid=".263kizasbnk.2.1.0"><div class="post-socials" data-reactid=".263kizasbnk.2.1.0.0"><div class="like-button" data-reactid=".263kizasbnk.2.1.0.0.0"><a class="social icon-link" href="javascript:void(0);" data-reactid=".263kizasbnk.2.1.0.0.0.0"><i class="fa fa-2 fa-heart-o" data-reactid=".263kizasbnk.2.1.0.0.0.0.0"></i></a></div><span data-reactid=".263kizasbnk.2.1.0.0.1">TODO: duoshuo</span></div><div class="action-buttons" data-reactid=".263kizasbnk.2.1.0.1">TODO: action buttons</div></div></section><article data-reactid=".263kizasbnk.2.2"><div class="container" data-reactid=".263kizasbnk.2.2.0"><h2 id="u4ECB_u7ECD"><a href="#u4ECB_u7ECD" class="headerlink" title="介绍"></a>介绍</h2><p>技术类博客总是不可避免的要插入各种UML图，昨天偶然发现一个有意思的Javascript库<a href="http://jumly.tmtk.net/" target="_blank" rel="external">Jumly</a>，用于渲染UML sequence diagram和robustness diagram。于是制作了一个hexo插件，便于在博客中插入。</p>
+<p><strong>Sequence Diagram</strong><br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@found &#34;You&#34;, -&#62;&#10;  @message &#34;Think&#34;, -&#62;&#10;    @message &#34;Write your idea&#34;, &#34;hexo-tag-uml&#34;, -&#62;&#10;      @message &#34;&#34;, &#34;JUMLY&#34;, -&#62;&#10;        @create &#34;Diagram&#34;&#10;hexo_tag_uml.css &#34;background-color&#34;:&#34;#8CC84B&#34;</span><br></pre></td></tr></table></figure></p>
+<p><strong>Robustness Diagram</strong><br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@actor &#34;User&#34; :-&#62; @view &#34;Browser&#34;&#10;@view &#34;Browser&#34; :-&#62; @controller &#34;Server&#34;&#10;@controller &#34;Server&#34; :-&#62; @entity &#34;Database&#34;</span><br></pre></td></tr></table></figure></p>
+<h2 id="u5B89_u88C5"><a href="#u5B89_u88C5" class="headerlink" title="安装"></a>安装</h2><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-tag-uml --save</span><br></pre></td></tr></table></figure>
+<h2 id="u521D_u59CB_u5316"><a href="#u521D_u59CB_u5316" class="headerlink" title="初始化"></a>初始化</h2><p>在blog文件夹中执行：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo uml install</span><br></pre></td></tr></table></figure>
+<p>在<code>_config.yml</code>文件中添加：<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">plugins:&#10;- hexo-tag-uml</span><br></pre></td></tr></table></figure></p>
+<p>在主题的<code>.ejs</code>文件的合适位置插入：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">%-</span> <span class="attribute">partial</span>('<span class="attribute">jumly</span>') %&gt;</span></span><br></pre></td></tr></table></figure>
+<p>一般而言可以放在<code>&lt;head&gt;</code>一节里，需要注意的是Jumly依赖于jQuery，如果主题里引用了其它位置的jQuery，会导致冲突。<br>比如hexo的默认主题landscape就在<code>after-footer.ejs</code>中插入了jQuery，需要将相应行去掉，替换为上面语句。<br>也是因为实际主题的实现哥又不同，这个插件没能实现自动修改theme layout文件。</p>
+<h2 id="u8BED_u6CD5"><a href="#u8BED_u6CD5" class="headerlink" title="语法"></a>语法</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#123;&amp;#37; uml [diagram_type] %&#125;</span><br><span class="line">&#123;&amp;#37; uml %&#125;</span><br></pre></td></tr></table></figure>
+<p><code>diagram_type</code>可以取的值为：</p>
+<ul>
+<li>sequence</li>
+<li>robustness</li>
+</ul>
+<p>如果留空，默认为sequence。</p>
+<h2 id="u793A_u4F8B"><a href="#u793A_u4F8B" class="headerlink" title="示例"></a>示例</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&#123;&amp;#37; uml %&#125;</span><br><span class="line">@found "Browser", -&gt;</span><br><span class="line">  @alt &#123;</span><br><span class="line"><span class="code">    "[200]": -&gt; @message "GET href resources", "HTTP Server"</span></span><br><span class="line"><span class="code">    "[301]": -&gt; @ref "GET the moved page"</span></span><br><span class="line"><span class="code">    "[404]": -&gt; @ref "show NOT FOUND"</span></span><br><span class="line">  &#125;</span><br><span class="line">@find(".ref").css(width:256, "padding-bottom":4)</span><br><span class="line">  .find(".tag").css float:"left"</span><br><span class="line">get<span class="emphasis">_the_</span>moved_page.css "background-color":"#80c080"</span><br><span class="line">show<span class="emphasis">_not_</span>found.css "background-color":"#f0b0b0"</span><br><span class="line">&#123;&amp;#37; enduml %&#125;</span><br></pre></td></tr></table></figure>
+<p>效果</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@found &#34;Browser&#34;, -&#62;&#10;  @alt &#123;&#10;    &#34;[200]&#34;: -&#62; @message &#34;GET href resources&#34;, &#34;HTTP Server&#34;&#10;    &#34;[301]&#34;: -&#62; @ref &#34;GET the moved page&#34;&#10;    &#34;[404]&#34;: -&#62; @ref &#34;show NOT FOUND&#34;&#10;  &#125;&#10;@find(&#34;.ref&#34;).css(width:256, &#34;padding-bottom&#34;:4)&#10;  .find(&#34;.tag&#34;).css float:&#34;left&#34;&#10;get_the_moved_page.css &#34;background-color&#34;:&#34;#80c080&#34;&#10;show_not_found.css &#34;background-color&#34;:&#34;#f0b0b0&#34;</span><br></pre></td></tr></table></figure>
+<p>Jumly的表达式规则详见：<a href="http://jumly.tmtk.net/reference.html" target="_blank" rel="external">Jumly Reference Manual</a></p>
+<p>在线编辑器：<a href="http://jumly.tmtk.net/try.html" target="_blank" rel="external">Try Jumly</a></p>
+</div></article></div><footer class="footer" data-reactid=".263kizasbnk.3"><div class="container" data-reactid=".263kizasbnk.3.0"><div class="row" data-reactid=".263kizasbnk.3.0.0"><div class="col-md-6 footer-left" data-reactid=".263kizasbnk.3.0.0.0"><p data-reactid=".263kizasbnk.3.0.0.0.0"><span data-reactid=".263kizasbnk.3.0.0.0.0.0"><span data-reactid=".263kizasbnk.3.0.0.0.0.0.0">© 2015 </span><span data-reactid=".263kizasbnk.3.0.0.0.0.0.1">CatX</span><span data-reactid=".263kizasbnk.3.0.0.0.0.0.2"> by </span><a href="#" data-reactid=".263kizasbnk.3.0.0.0.0.0.3">AKFish</a><span data-reactid=".263kizasbnk.3.0.0.0.0.0.4">. </span></span><span data-reactid=".263kizasbnk.3.0.0.0.0.1"><a href="https://github.com/akfish/hexo-cocat-theme" data-reactid=".263kizasbnk.3.0.0.0.0.1.0">CoCat</a><span data-reactid=".263kizasbnk.3.0.0.0.0.1.1"> Theme by </span><a href="http://catx.me" data-reactid=".263kizasbnk.3.0.0.0.0.1.2">AKFish</a></span></p><ul data-reactid=".263kizasbnk.3.0.0.0.1"><li data-reactid=".263kizasbnk.3.0.0.0.1.$admin@example=1com"><a href="mailto:admin@example.com" target="_blank" data-reactid=".263kizasbnk.3.0.0.0.1.$admin@example=1com.0">admin@example.com</a></li><li data-reactid=".263kizasbnk.3.0.0.0.1.$About"><a href="/about.html" target="_blank" data-reactid=".263kizasbnk.3.0.0.0.1.$About.0">About</a></li><li data-reactid=".263kizasbnk.3.0.0.0.1.$Terms"><a href="/terms.html" target="_blank" data-reactid=".263kizasbnk.3.0.0.0.1.$Terms.0">Terms</a></li><li data-reactid=".263kizasbnk.3.0.0.0.1.$FAQ"><a href="/faq.html" target="_blank" data-reactid=".263kizasbnk.3.0.0.0.1.$FAQ.0">FAQ</a></li></ul></div><div class="col-md-6 footer-socials" data-reactid=".263kizasbnk.3.0.0.1"><a style="background:transparent;" class="social icon-link github" href="https://github.com/user" target="_blank" data-reactid=".263kizasbnk.3.0.0.1.$github"><i class="fa fa-2 fa-github" data-reactid=".263kizasbnk.3.0.0.1.$github.0"></i></a><a style="background:transparent;" class="social icon-link twitter" href="https://twitter.com/user" target="_blank" data-reactid=".263kizasbnk.3.0.0.1.$twitter"><i class="fa fa-2 fa-twitter" data-reactid=".263kizasbnk.3.0.0.1.$twitter.0"></i></a><a style="background:transparent;" class="social icon-link facebook" href="https://facebook.com/user" target="_blank" data-reactid=".263kizasbnk.3.0.0.1.$facebook"><i class="fa fa-2 fa-facebook" data-reactid=".263kizasbnk.3.0.0.1.$facebook.0"></i></a><a style="background:transparent;" class="social icon-link google" href="https://plus.google.com/user" target="_blank" data-reactid=".263kizasbnk.3.0.0.1.$google"><i class="fa fa-2 fa-google-plus-square" data-reactid=".263kizasbnk.3.0.0.1.$google.0"></i></a><a style="background:transparent;" class="social icon-link dribbble" href="https://dribbble.com/user" target="_blank" data-reactid=".263kizasbnk.3.0.0.1.$dribbble"><i class="fa fa-2 fa-dribbble" data-reactid=".263kizasbnk.3.0.0.1.$dribbble.0"></i></a><a style="background:transparent;" class="social icon-link rss" href="/atom.xml" target="_blank" data-reactid=".263kizasbnk.3.0.0.1.$rss"><i class="fa fa-2 fa-rss" data-reactid=".263kizasbnk.3.0.0.1.$rss.0"></i></a></div></div></div></footer></div></div>
+
+  <script src="/script/cocat.js" type="text/javascript"></script>
+  <script type="text/javascript" src="/react_bundle.js"></script>
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript">
+    var CoCat = {
+      isHome: false,
+      isPost: true,
+      isArchive: false
+    };
+  </script>
+  
+  <title>HTML5音频可视化试验 | CatX</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="上周末脑洞大开的想到能否完全用HTML5的Web Audio API实现一个吉他调音器，折腾过后这个主要的目标失败了，音频可视化的部分倒是相对完整，实现了音量、频谱图以及音高的可视化。
+音高检测算法调音器的原理其实很简单，本质上就是音高检测算法(pitch detection algorithm)，实现的方式有很多[1]，时域方法和频域方法都有。
+乐音最基本的特征就是由一系列谐波组成，包含一个基本">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTML5音频可视化试验">
+<meta property="og:url" content="http://catx.me/2014/08/26/html5-sound-visualization-experiment-with-processingjs/index.html">
+<meta property="og:site_name" content="CatX">
+<meta property="og:description" content="上周末脑洞大开的想到能否完全用HTML5的Web Audio API实现一个吉他调音器，折腾过后这个主要的目标失败了，音频可视化的部分倒是相对完整，实现了音量、频谱图以及音高的可视化。
+音高检测算法调音器的原理其实很简单，本质上就是音高检测算法(pitch detection algorithm)，实现的方式有很多[1]，时域方法和频域方法都有。
+乐音最基本的特征就是由一系列谐波组成，包含一个基本">
+<meta property="og:image" content="http://catx.me/images/d36ba1d28266e9eea9e0bc73cf32b53557e2ed21.gif">
+<meta property="og:image" content="http://catx.me/images/f8919d6d536b1edcc0cfd78bbf6b1da1554330b1.png">
+<meta property="og:image" content="http://catx.me/images/5282b104e2e419c83c659f2507bdd849410f8093.png">
+<meta property="og:updated_time" content="2015-05-05T21:44:01.949Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="HTML5音频可视化试验">
+<meta name="twitter:description" content="上周末脑洞大开的想到能否完全用HTML5的Web Audio API实现一个吉他调音器，折腾过后这个主要的目标失败了，音频可视化的部分倒是相对完整，实现了音量、频谱图以及音高的可视化。
+音高检测算法调音器的原理其实很简单，本质上就是音高检测算法(pitch detection algorithm)，实现的方式有很多[1]，时域方法和频域方法都有。
+乐音最基本的特征就是由一系列谐波组成，包含一个基本">
+  <!-- Swiftype -->
+  <meta class="swiftype" name="title" data-type="string" content="HTML5音频可视化试验">
+
+  
+    <link rel="alternative" href="/atom.xml" title="CatX" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  
+</head>
+
+<body>
+  <div id="app"><div class="master is-post" data-reactid=".fn8mw3k000" data-react-checksum="618058935"><div class="top-banner" style="display:none;" data-reactid=".fn8mw3k000.0"><span data-reactid=".fn8mw3k000.0.0">Banner Message</span><a href="#" data-reactid=".fn8mw3k000.0.1">Go</a></div><nav class="navbar navbar-inverse" style="text-shadow:0px 0px 10px rgba(0, 0, 0, 0.1), 0px 0px 5px rgba(0, 0, 0, 0.1), 0px 0px 10px #2f5a75, 0px 0px 5px #2f5a75;" data-reactid=".fn8mw3k000.1"><div class="container" data-reactid=".fn8mw3k000.1.0"><div class="navbar-header" data-reactid=".fn8mw3k000.1.0.0"><a class="navbar-link hamburger-menu icon-link" href="javascript:void(0)" data-reactid=".fn8mw3k000.1.0.0.0"><i class="fa fa-2x fa-bars" data-reactid=".fn8mw3k000.1.0.0.0.0"></i></a><a class="navbar-brand" href="#" data-reactid=".fn8mw3k000.1.0.0.1"><i class="logo icon cocat-logo" data-reactid=".fn8mw3k000.1.0.0.1.0"></i><span data-reactid=".fn8mw3k000.1.0.0.1.1">CatX</span></a><span data-reactid=".fn8mw3k000.1.0.0.2"></span></div><div class="collapse navbar-collapse" data-reactid=".fn8mw3k000.1.0.1"><form class="navbar-form navbar-right" role="search" data-reactid=".fn8mw3k000.1.0.1.0"><div class="form-group" data-reactid=".fn8mw3k000.1.0.1.0.0"><input type="text" class="form-control" placeholder="Search" data-reactid=".fn8mw3k000.1.0.1.0.0.0"/></div></form><ul class="nav navbar-nav navbar-right" data-reactid=".fn8mw3k000.1.0.1.1"><li class="" data-reactid=".fn8mw3k000.1.0.1.1.$Home"><a class="" href="/" data-reactid=".fn8mw3k000.1.0.1.1.$Home.0">Home</a></li><li class="" data-reactid=".fn8mw3k000.1.0.1.1.$Archives"><a class="" href="/archives/" data-reactid=".fn8mw3k000.1.0.1.1.$Archives.0">Archives</a></li></ul></div></div></nav><div class="post-wrapper" data-reactid=".fn8mw3k000.2"><section id="preview" style="background-color:#2f5a75;" class="dark" data-reactid=".fn8mw3k000.2.0"><div class="intro-wrapper" data-reactid=".fn8mw3k000.2.0.0"><div class="container" data-reactid=".fn8mw3k000.2.0.0.0"><div class="row" data-reactid=".fn8mw3k000.2.0.0.0.0"><div class="feature-image col-sm-8 col-sm-push-4 col-xs-12" data-reactid=".fn8mw3k000.2.0.0.0.0.0"><img alt="Feature image" src="/image/stock/2.jpg" data-reactid=".fn8mw3k000.2.0.0.0.0.0.0"/></div><div style="text-shadow:0px 0px 10px rgba(0, 0, 0, 0.1), 0px 0px 5px rgba(0, 0, 0, 0.1), 0px 0px 10px #2f5a75, 0px 0px 5px #2f5a75;" class="post-title col-sm-4 col-sm-pull-8 col-xs-12 col-xs-12" data-reactid=".fn8mw3k000.2.0.0.0.0.1"><h1 data-reactid=".fn8mw3k000.2.0.0.0.0.1.0">HTML5音频可视化试验</h1><div class="post-intro" data-reactid=".fn8mw3k000.2.0.0.0.0.1.1"></div></div></div></div></div></section><section id="post-action" data-reactid=".fn8mw3k000.2.1"><div class="container" data-reactid=".fn8mw3k000.2.1.0"><div class="post-socials" data-reactid=".fn8mw3k000.2.1.0.0"><div class="like-button" data-reactid=".fn8mw3k000.2.1.0.0.0"><a class="social icon-link" href="javascript:void(0);" data-reactid=".fn8mw3k000.2.1.0.0.0.0"><i class="fa fa-2 fa-heart-o" data-reactid=".fn8mw3k000.2.1.0.0.0.0.0"></i></a></div><span data-reactid=".fn8mw3k000.2.1.0.0.1">TODO: duoshuo</span></div><div class="action-buttons" data-reactid=".fn8mw3k000.2.1.0.1">TODO: action buttons</div></div></section><article data-reactid=".fn8mw3k000.2.2"><div class="container" data-reactid=".fn8mw3k000.2.2.0"><p><img src="/images/d36ba1d28266e9eea9e0bc73cf32b53557e2ed21.gif" alt=""></p>
+<p>上周末脑洞大开的想到能否完全用HTML5的Web Audio API实现一个吉他调音器，折腾过后这个主要的目标失败了，音频可视化的部分倒是相对完整，实现了音量、频谱图以及音高的可视化。</p>
+<h2 id="u97F3_u9AD8_u68C0_u6D4B_u7B97_u6CD5"><a href="#u97F3_u9AD8_u68C0_u6D4B_u7B97_u6CD5" class="headerlink" title="音高检测算法"></a>音高检测算法</h2><p>调音器的原理其实很简单，本质上就是音高检测算法(pitch detection algorithm)，实现的方式有很多<a href="http://strum.googlecode.com/svn/trunk/Research/Efficient%20Pitch%20Detection%20Techniques%20For%20Interactive%20Music.pdf" target="_blank" rel="external">[1]</a>，时域方法和频域方法都有。</p>
+<p>乐音最基本的特征就是由一系列谐波组成，包含一个基本频率$f$，以及一系列基本频率的整数倍的子波$2f, 3f, 4f, …, nf$，基础频率$f$的值就是乐音的音调。</p>
+<p><img src="/images/f8919d6d536b1edcc0cfd78bbf6b1da1554330b1.png" alt=""></p>
+<p>所以一种简单的频域音高检测算法就是HPS(harmonic product spectrum)：</p>
+<p>$$Y(\omega) = \prod_{r = 1}^R|X(\omega r)|$$<br>$$\hat{Y} = \max_{\omega_i}{Y(\omega_i)}$$</p>
+<p>其中$X$是音频在频域空间的向量表示（通常通过FFT得到），HPS就是求一个频率的$R$个整数数倍位置的信号强度的乘积，形成一个新的频谱图$Y$。</p>
+<p>谐波的基础频率就会在$Y$中形成波峰：</p>
+<p><img src="/images/5282b104e2e419c83c659f2507bdd849410f8093.png" alt=""></p>
+<p>这个方法的缺点很明显，高频信号由于已经没有多少谐波被采样，因此在高频并不可靠。不过对于音乐而言，这并不是问题，钢琴的最高音C8不过才4186.01Hz，而音乐文件的采样率普遍是kHz级别。</p>
+<h2 id="HTML5_Audio_API"><a href="#HTML5_Audio_API" class="headerlink" title="HTML5 Audio API"></a>HTML5 Audio API</h2><p>用Audio API做音频可视化至少会创建三个对象：<code>AudioContext</code>, <code>AudioSource</code>和<code>AnalyzerNode</code>。<br>前两者的作用很显然不用多说，<code>AnalyzerNode</code>提供实时的FFT数据。</p>
+<p>首先当然是创建一个<code>context</code>，绑定一个<code>analyzer</code>:</p>
+<figure class="highlight coffee"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">context = <span class="keyword">new</span> AudioContext()</span><br><span class="line">analyzer = context.createAnalyser()</span><br><span class="line">analyzer.smoothingTimeConstant = <span class="number">0.3</span></span><br><span class="line">analyzer.fftSize = <span class="number">2048</span></span><br></pre></td></tr></table></figure>
+<p>其中<code>fftSize</code>指定把频域空间平均分成多少份.</p>
+<p>接着是创建<code>source</code>，可以是麦克风的输入：</p>
+<figure class="highlight coffee"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">navigator.getUserMedia <span class="attribute">audio</span>: <span class="literal">true</span>, <span class="function">(<span class="params">(stream)</span> -&gt;</span></span><br><span class="line">  source = context.createMediaStreamSource stream</span><br><span class="line">  mic_stream = stream</span><br><span class="line">  source.connect analyzer</span><br><span class="line">  analyzer.connect context.destination</span><br><span class="line">  <span class="built_in">console</span>.log <span class="string">"Microphone open. Sample rate: <span class="subst">#&#123;context.sampleRate&#125;</span> Hz"</span></span><br><span class="line">  ), <span class="function"><span class="params">(err)</span> -&gt;</span></span><br><span class="line">    <span class="built_in">console</span>.error <span class="string">"Fail to access microphone: <span class="subst">#&#123;err&#125;</span>"</span></span><br></pre></td></tr></table></figure>
+<p>也可以是载入一个音频文件：</p>
+<figure class="highlight coffee"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">source = context.createBufferSource()</span><br><span class="line"></span><br><span class="line">source.connect analyzer</span><br><span class="line">analyzer.connect context.destination</span><br><span class="line"></span><br><span class="line">xhr = <span class="keyword">new</span> XMLHttpRequest()</span><br><span class="line">xhr.onload = <span class="function">=&gt;</span></span><br><span class="line">  context.decodeAudioData xhr.response, <span class="function">(<span class="params">(b)</span> -&gt;</span></span><br><span class="line">    <span class="built_in">console</span>.log <span class="string">"Audio loaded: <span class="subst">#&#123;url&#125;</span>, Sample rate: <span class="subst">#&#123;context.sampleRate&#125;</span>Hz"</span></span><br><span class="line">    source.buffer = b</span><br><span class="line">    source.<span class="keyword">loop</span> = <span class="literal">true</span></span><br><span class="line">    source.start <span class="number">0.0</span></span><br><span class="line">    ), <span class="function"><span class="params">(err)</span> -&gt;</span></span><br><span class="line">      <span class="built_in">console</span>.error <span class="string">"Fail to load audio: <span class="subst">#&#123;url&#125;</span>"</span></span><br><span class="line">xhr.open <span class="string">"GET"</span>, url, <span class="literal">true</span></span><br><span class="line">xhr.responseType = <span class="string">'arraybuffer'</span></span><br><span class="line">xhr.send()</span><br></pre></td></tr></table></figure>
+<p>然后需要创建一个<code>ScriptProcessorNode</code>，和<code>analyzer</code>链接，这样在每帧数据可用时会执行前者的<code>onaudioprocess</code>，音频处理算法一般都放在这里：</p>
+<figure class="highlight coffee"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">node = context.createScriptProcessor <span class="number">2048</span>, <span class="number">1</span>, <span class="number">1</span></span><br><span class="line">node.onaudioprocess = <span class="function">-&gt;</span></span><br><span class="line">  <span class="comment"># <span class="doctag">TODO:</span> process audio</span></span><br><span class="line">node.connect context.destination</span><br><span class="line">analyzer.connect node</span><br></pre></td></tr></table></figure>
+<p>读取FFT数据：</p>
+<figure class="highlight coffee"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">node.onaudioprocess = <span class="function">-&gt;</span></span><br><span class="line">  n = analyzer.frequencyBinCount</span><br><span class="line">  arr = <span class="keyword">new</span> Uint8Array(n)</span><br><span class="line">  analyzer.getByteFrequencyData arr</span><br><span class="line">  <span class="comment"># <span class="doctag">TODO:</span> Draw</span></span><br></pre></td></tr></table></figure>
+<p>读出来的数组里包含了从低频到高频的强度，可以直接用于绘制频谱图，求和平均就是音量，也可以作为频域处理算法的输入。</p>
+<p>数组里元素$i$对应的频率为$f_i = \frac{Sample Rate}{FFT Size} i$。</p>
+<p>在调音器这个应用中，最大的问题就是精度，Audio API里最大取值只能是<code>2048</code>，在48kHz采样率时，频率分辨率只能到23.43Hz。<br>这个精度是无法接受的，如$E4 = 329.628, F4 = 349.228$之间只相差了19.6Hz，完全无法区分。</p>
+<h2 id="u53EF_u89C6_u5316"><a href="#u53EF_u89C6_u5316" class="headerlink" title="可视化"></a>可视化</h2><p>在这个项目里尝试了下<a href="/processingjs.org/">processing.js</a>，虽然API很清晰，但是绘图功能不足，没有原生的gradient，blur支持，只能人肉实现，于是性能一不小心就惨淡了。</p>
+<h2 id="u6E90_u7801"><a href="#u6E90_u7801" class="headerlink" title="源码"></a>源码</h2><ul>
+<li><a href="http://catx.me/not-a-tuner-yet">Demo</a></li>
+</ul>
+<div id="badge-container-akfish-not-a-tuner-yet-a34a7d" class="hexo-github" style="width: 100%"></div>
+<script src="/hexo-github/badge.js"></script>
+<script type="text/javascript">
+  loadStyle("/hexo-github/style.css");
+  loadStyle("/hexo-github/octicons/octicons.css");
+  new Badge("#badge-container-akfish-not-a-tuner-yet-a34a7d", "akfish", "not-a-tuner-yet", "a34a7d", false);
+</script>
+
+<p>建议使用Chrome打开，FireFox上性能很惨淡。</p>
+</div></article></div><footer class="footer" data-reactid=".fn8mw3k000.3"><div class="container" data-reactid=".fn8mw3k000.3.0"><div class="row" data-reactid=".fn8mw3k000.3.0.0"><div class="col-md-6 footer-left" data-reactid=".fn8mw3k000.3.0.0.0"><p data-reactid=".fn8mw3k000.3.0.0.0.0"><span data-reactid=".fn8mw3k000.3.0.0.0.0.0"><span data-reactid=".fn8mw3k000.3.0.0.0.0.0.0">© 2015 </span><span data-reactid=".fn8mw3k000.3.0.0.0.0.0.1">CatX</span><span data-reactid=".fn8mw3k000.3.0.0.0.0.0.2"> by </span><a href="#" data-reactid=".fn8mw3k000.3.0.0.0.0.0.3">AKFish</a><span data-reactid=".fn8mw3k000.3.0.0.0.0.0.4">. </span></span><span data-reactid=".fn8mw3k000.3.0.0.0.0.1"><a href="https://github.com/akfish/hexo-cocat-theme" data-reactid=".fn8mw3k000.3.0.0.0.0.1.0">CoCat</a><span data-reactid=".fn8mw3k000.3.0.0.0.0.1.1"> Theme by </span><a href="http://catx.me" data-reactid=".fn8mw3k000.3.0.0.0.0.1.2">AKFish</a></span></p><ul data-reactid=".fn8mw3k000.3.0.0.0.1"><li data-reactid=".fn8mw3k000.3.0.0.0.1.$admin@example=1com"><a href="mailto:admin@example.com" target="_blank" data-reactid=".fn8mw3k000.3.0.0.0.1.$admin@example=1com.0">admin@example.com</a></li><li data-reactid=".fn8mw3k000.3.0.0.0.1.$About"><a href="/about.html" target="_blank" data-reactid=".fn8mw3k000.3.0.0.0.1.$About.0">About</a></li><li data-reactid=".fn8mw3k000.3.0.0.0.1.$Terms"><a href="/terms.html" target="_blank" data-reactid=".fn8mw3k000.3.0.0.0.1.$Terms.0">Terms</a></li><li data-reactid=".fn8mw3k000.3.0.0.0.1.$FAQ"><a href="/faq.html" target="_blank" data-reactid=".fn8mw3k000.3.0.0.0.1.$FAQ.0">FAQ</a></li></ul></div><div class="col-md-6 footer-socials" data-reactid=".fn8mw3k000.3.0.0.1"><a style="background:transparent;" class="social icon-link github" href="https://github.com/user" target="_blank" data-reactid=".fn8mw3k000.3.0.0.1.$github"><i class="fa fa-2 fa-github" data-reactid=".fn8mw3k000.3.0.0.1.$github.0"></i></a><a style="background:transparent;" class="social icon-link twitter" href="https://twitter.com/user" target="_blank" data-reactid=".fn8mw3k000.3.0.0.1.$twitter"><i class="fa fa-2 fa-twitter" data-reactid=".fn8mw3k000.3.0.0.1.$twitter.0"></i></a><a style="background:transparent;" class="social icon-link facebook" href="https://facebook.com/user" target="_blank" data-reactid=".fn8mw3k000.3.0.0.1.$facebook"><i class="fa fa-2 fa-facebook" data-reactid=".fn8mw3k000.3.0.0.1.$facebook.0"></i></a><a style="background:transparent;" class="social icon-link google" href="https://plus.google.com/user" target="_blank" data-reactid=".fn8mw3k000.3.0.0.1.$google"><i class="fa fa-2 fa-google-plus-square" data-reactid=".fn8mw3k000.3.0.0.1.$google.0"></i></a><a style="background:transparent;" class="social icon-link dribbble" href="https://dribbble.com/user" target="_blank" data-reactid=".fn8mw3k000.3.0.0.1.$dribbble"><i class="fa fa-2 fa-dribbble" data-reactid=".fn8mw3k000.3.0.0.1.$dribbble.0"></i></a><a style="background:transparent;" class="social icon-link rss" href="/atom.xml" target="_blank" data-reactid=".fn8mw3k000.3.0.0.1.$rss"><i class="fa fa-2 fa-rss" data-reactid=".fn8mw3k000.3.0.0.1.$rss.0"></i></a></div></div></div></footer></div></div>
+
+  <script src="/script/cocat.js" type="text/javascript"></script>
+  <script type="text/javascript" src="/react_bundle.js"></script>
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</body>
+</html>
