@@ -6664,9 +6664,32 @@ body,
 }
 #post-action {
   position: relative;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   height: 100%;
   line-height: 48px;
   vertical-align: middle;
+}
+#post-action .post-socials {
+  float: left;
+}
+#post-action .action-buttons {
+  float: right;
+}
+#post-action .action-buttons a {
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+}
+#post-action .action-buttons .btn {
+  border-radius: 0.25em;
+  margin-left: 8px;
+  border-color: transparent;
+}
+#post-action .action-buttons .btn.btn-default {
+  background: #383838;
+}
+#post-action .action-buttons .btn.btn-primary {
+  background: #c6463d;
 }
 #post-action .like-button,
 #post-action .ds-share {
@@ -6686,7 +6709,7 @@ body,
 }
 #post-action .ds-share a {
   font-weight: normal;
-  color: #383838;
+  color: rgba(0, 0, 0, 0.54);
   text-decoration: none;
 }
 #post-action .ds-share a {
